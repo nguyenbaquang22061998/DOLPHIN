@@ -1,0 +1,9 @@
+D:\DOLPHIN\DOLPHIN\DOLPHIN.DTO\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.deps.json
+D:\DOLPHIN\DOLPHIN\DOLPHIN.DTO\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.dll
+D:\DOLPHIN\DOLPHIN\DOLPHIN.DTO\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.pdb
+D:\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.csprojAssemblyReference.cache
+D:\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.AssemblyInfoInputs.cache
+D:\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.AssemblyInfo.cs
+D:\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.csproj.CoreCompileInputs.cache
+D:\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.dll
+D:\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.pdb
