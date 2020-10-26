@@ -13,11 +13,22 @@ namespace DOLPHIN.Model
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder
-                .UseMySql("server=localhost;database:dolphin;user=root;password=;sslmode=none;")
+                .UseMySql("server=localhost;database=dolphin;user=root;password=;sslmode=none;")
                 .UseLoggerFactory(LoggerFactory.Create(b => b
                 .AddFilter(level => level >= LogLevel.Information)))
                 .EnableSensitiveDataLogging()
                 .EnableDetailedErrors();
+        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<RoleUser>()
+                .HasKey(c => new { c.RoleId, c.UserId });
+            modelBuilder.Entity<RolePermission>()
+                .HasKey(c => new { c.RoleId, c.PermissionId });
+            modelBuilder.Entity<Comments>()
+                .HasKey(c => new { c.UserId, c.ProductId });
+            modelBuilder.Entity<Users>().HasIndex(c => c.Email).IsUnique();
+            modelBuilder.Entity<Users>().HasIndex(c => c.UserName).IsUnique();
         }
     }
 }

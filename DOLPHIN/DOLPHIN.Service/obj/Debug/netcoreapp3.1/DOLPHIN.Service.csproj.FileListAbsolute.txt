@@ -4,6 +4,9 @@ D:\DOLPHIN\DOLPHIN\DOLPHIN.Service\bin\Debug\netcoreapp3.1\DOLPHIN.Service.pdb
 D:\DOLPHIN\DOLPHIN\DOLPHIN.Service\obj\Debug\netcoreapp3.1\DOLPHIN.Service.csprojAssemblyReference.cache
 D:\DOLPHIN\DOLPHIN\DOLPHIN.Service\obj\Debug\netcoreapp3.1\DOLPHIN.Service.AssemblyInfoInputs.cache
 D:\DOLPHIN\DOLPHIN\DOLPHIN.Service\obj\Debug\netcoreapp3.1\DOLPHIN.Service.AssemblyInfo.cs
-D:\DOLPHIN\DOLPHIN\DOLPHIN.Service\obj\Debug\netcoreapp3.1\DOLPHIN.Service.csproj.CoreCompileInputs.cache
 D:\DOLPHIN\DOLPHIN\DOLPHIN.Service\obj\Debug\netcoreapp3.1\DOLPHIN.Service.dll
 D:\DOLPHIN\DOLPHIN\DOLPHIN.Service\obj\Debug\netcoreapp3.1\DOLPHIN.Service.pdb
+D:\DOLPHIN\DOLPHIN\DOLPHIN.Service\bin\Debug\netcoreapp3.1\DOLPHIN.Service.runtimeconfig.json
+D:\DOLPHIN\DOLPHIN\DOLPHIN.Service\bin\Debug\netcoreapp3.1\DOLPHIN.Service.runtimeconfig.dev.json
+D:\DOLPHIN\DOLPHIN\DOLPHIN.Service\obj\Debug\netcoreapp3.1\DOLPHIN.Service.csproj.CoreCompileInputs.cache
+D:\DOLPHIN\DOLPHIN\DOLPHIN.Service\obj\Debug\netcoreapp3.1\DOLPHIN.Service.genruntimeconfig.cache

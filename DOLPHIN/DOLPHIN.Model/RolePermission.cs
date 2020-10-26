@@ -7,7 +7,7 @@ using System.Text.Json.Serialization;
 
 namespace DOLPHIN.Model
 {
-    public class RolePermission
+    public class RolePermission : BaseEntity
     {
         [ForeignKey("PermissionId")]
         [JsonIgnore]

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DOLPHIN.Model
 {
-    public class Products
+    public class Products : AuditableEntity
     {
         [Key]
         public Guid Id { get; set; }
@@ -14,12 +14,5 @@ namespace DOLPHIN.Model
         public string Size { get; set; }
         public string Desciption { get; set; }
         public int Status { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public DateTime UpdatedDate { get; set; }
-
-        public int CreatedBy { get; set; }
-
-        public int UpdatedBy { get; set; }
-
     }
 }

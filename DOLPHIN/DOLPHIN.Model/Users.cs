@@ -21,6 +21,12 @@ namespace DOLPHIN.Model
         public string UserName { get; set; }
 
         /// <summary>
+        /// Gets or sets Password.
+        /// </summary>
+        [Required]
+        public string Password { get; set; }
+
+        /// <summary>
         /// Gets or sets Email.
         /// </summary>
         [Required]

@@ -4,6 +4,9 @@ D:\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\bin\Debug\netcoreapp3.1\DOLPHIN.Mapping.pdb
 D:\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.csprojAssemblyReference.cache
 D:\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.AssemblyInfoInputs.cache
 D:\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.AssemblyInfo.cs
-D:\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.csproj.CoreCompileInputs.cache
 D:\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.dll
 D:\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.pdb
+D:\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\bin\Debug\netcoreapp3.1\DOLPHIN.Mapping.runtimeconfig.json
+D:\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\bin\Debug\netcoreapp3.1\DOLPHIN.Mapping.runtimeconfig.dev.json
+D:\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.csproj.CoreCompileInputs.cache
+D:\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.genruntimeconfig.cache

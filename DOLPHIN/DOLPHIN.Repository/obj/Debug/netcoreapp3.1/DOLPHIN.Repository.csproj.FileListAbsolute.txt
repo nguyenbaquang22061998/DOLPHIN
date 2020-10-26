@@ -4,6 +4,11 @@ D:\DOLPHIN\DOLPHIN\DOLPHIN.Repository\bin\Debug\netcoreapp3.1\DOLPHIN.Repository
 D:\DOLPHIN\DOLPHIN\DOLPHIN.Repository\obj\Debug\netcoreapp3.1\DOLPHIN.Repository.csprojAssemblyReference.cache
 D:\DOLPHIN\DOLPHIN\DOLPHIN.Repository\obj\Debug\netcoreapp3.1\DOLPHIN.Repository.AssemblyInfoInputs.cache
 D:\DOLPHIN\DOLPHIN\DOLPHIN.Repository\obj\Debug\netcoreapp3.1\DOLPHIN.Repository.AssemblyInfo.cs
-D:\DOLPHIN\DOLPHIN\DOLPHIN.Repository\obj\Debug\netcoreapp3.1\DOLPHIN.Repository.csproj.CoreCompileInputs.cache
 D:\DOLPHIN\DOLPHIN\DOLPHIN.Repository\obj\Debug\netcoreapp3.1\DOLPHIN.Repository.dll
 D:\DOLPHIN\DOLPHIN\DOLPHIN.Repository\obj\Debug\netcoreapp3.1\DOLPHIN.Repository.pdb
+D:\DOLPHIN\DOLPHIN\DOLPHIN.Repository\bin\Debug\netcoreapp3.1\DOLPHIN.Repository.runtimeconfig.json
+D:\DOLPHIN\DOLPHIN\DOLPHIN.Repository\bin\Debug\netcoreapp3.1\DOLPHIN.Repository.runtimeconfig.dev.json
+D:\DOLPHIN\DOLPHIN\DOLPHIN.Repository\obj\Debug\netcoreapp3.1\DOLPHIN.Repository.genruntimeconfig.cache
+D:\DOLPHIN\DOLPHIN\DOLPHIN.Repository\bin\Debug\netcoreapp3.1\DOLPHIN.Model.dll
+D:\DOLPHIN\DOLPHIN\DOLPHIN.Repository\bin\Debug\netcoreapp3.1\DOLPHIN.Model.pdb
+D:\DOLPHIN\DOLPHIN\DOLPHIN.Repository\obj\Debug\netcoreapp3.1\DOLPHIN.Repository.csproj.CopyComplete
