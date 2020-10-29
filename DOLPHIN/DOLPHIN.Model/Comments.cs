@@ -15,7 +15,7 @@ namespace DOLPHIN.Model
 
         [Key]
         [Column(Order = 0)]
-        public string UserId { get; set; }
+        public Guid UserId { get; set; }
 
         [ForeignKey("ProductId")]
         [JsonIgnore]

@@ -5,10 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.9">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DOLPHIN.DTO\DOLPHIN.DTO.csproj" />
+    <ProjectReference Include="..\DOLPHIN.Model\DOLPHIN.Model.csproj" />
   </ItemGroup>
 
 </Project>

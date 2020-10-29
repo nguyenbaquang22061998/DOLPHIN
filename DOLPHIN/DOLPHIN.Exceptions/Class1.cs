@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DOLPHIN.Mapping
+namespace DOLPHIN.Exceptions
 {
     public class Class1
     {

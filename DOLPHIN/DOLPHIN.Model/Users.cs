@@ -11,7 +11,8 @@ namespace DOLPHIN.Model
         /// Gets or sets Id.
         /// </summary>
         [Key]
-        public string Id { get; set; }
+        [MaxLength(50)]
+        public Guid Id { get; set; }
 
         /// <summary>
         /// Gets or sets UserName.
@@ -24,12 +25,14 @@ namespace DOLPHIN.Model
         /// Gets or sets Password.
         /// </summary>
         [Required]
+        [MaxLength(50)]
         public string Password { get; set; }
 
         /// <summary>
         /// Gets or sets Email.
         /// </summary>
         [Required]
+        [MaxLength(50)]
         public string Email { get; set; }
 
         /// <summary>

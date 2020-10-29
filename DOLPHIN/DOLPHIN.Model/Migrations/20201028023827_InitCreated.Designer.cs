@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DOLPHIN.Model.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20201026132742_InitCreated")]
+    [Migration("20201028023827_InitCreated")]
     partial class InitCreated
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -21,8 +21,8 @@ namespace DOLPHIN.Model.Migrations
 
             modelBuilder.Entity("DOLPHIN.Model.Comments", b =>
                 {
-                    b.Property<string>("UserId")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("char(50)");
 
                     b.Property<Guid>("ProductId")
                         .HasColumnType("char(36)");
@@ -66,8 +66,8 @@ namespace DOLPHIN.Model.Migrations
                     b.Property<string>("Color")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<string>("CreatedById")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
+                    b.Property<Guid>("CreatedById")
+                        .HasColumnType("char(50)");
 
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime(6)");
@@ -88,8 +88,8 @@ namespace DOLPHIN.Model.Migrations
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
-                    b.Property<string>("UpdatedById")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
+                    b.Property<Guid>("UpdatedById")
+                        .HasColumnType("char(50)");
 
                     b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("datetime(6)");
@@ -123,8 +123,8 @@ namespace DOLPHIN.Model.Migrations
                     b.Property<Guid>("RoleId")
                         .HasColumnType("char(36)");
 
-                    b.Property<string>("UserId")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("char(50)");
 
                     b.HasKey("RoleId", "UserId");
 
@@ -139,8 +139,8 @@ namespace DOLPHIN.Model.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)");
 
-                    b.Property<string>("CreatedById")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
+                    b.Property<Guid>("CreatedById")
+                        .HasColumnType("char(50)");
 
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime(6)");
@@ -151,8 +151,8 @@ namespace DOLPHIN.Model.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<string>("UpdatedById")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
+                    b.Property<Guid>("UpdatedById")
+                        .HasColumnType("char(50)");
 
                     b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("datetime(6)");
@@ -168,12 +168,15 @@ namespace DOLPHIN.Model.Migrations
 
             modelBuilder.Entity("DOLPHIN.Model.Users", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(50)")
+                        .HasMaxLength(50);
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
+                        .HasColumnType("varchar(50) CHARACTER SET utf8mb4")
+                        .HasMaxLength(50);
 
                     b.Property<string>("FullName")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
@@ -183,7 +186,8 @@ namespace DOLPHIN.Model.Migrations
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("varchar(50) CHARACTER SET utf8mb4")
+                        .HasMaxLength(50);
 
                     b.Property<int>("Status")
                         .HasColumnType("int");
@@ -223,11 +227,15 @@ namespace DOLPHIN.Model.Migrations
                 {
                     b.HasOne("DOLPHIN.Model.Users", "CreatedBy")
                         .WithMany()
-                        .HasForeignKey("CreatedById");
+                        .HasForeignKey("CreatedById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("DOLPHIN.Model.Users", "UpdatedBy")
                         .WithMany()
-                        .HasForeignKey("UpdatedById");
+                        .HasForeignKey("UpdatedById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("DOLPHIN.Model.RolePermission", b =>
@@ -264,11 +272,15 @@ namespace DOLPHIN.Model.Migrations
                 {
                     b.HasOne("DOLPHIN.Model.Users", "CreatedBy")
                         .WithMany()
-                        .HasForeignKey("CreatedById");
+                        .HasForeignKey("CreatedById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("DOLPHIN.Model.Users", "UpdatedBy")
                         .WithMany()
-                        .HasForeignKey("UpdatedById");
+                        .HasForeignKey("UpdatedById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

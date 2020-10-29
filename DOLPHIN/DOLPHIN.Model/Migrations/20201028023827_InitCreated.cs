@@ -26,10 +26,10 @@ namespace DOLPHIN.Model.Migrations
                 name: "Users",
                 columns: table => new
                 {
-                    Id = table.Column<string>(nullable: false),
+                    Id = table.Column<Guid>(maxLength: 50, nullable: false),
                     UserName = table.Column<string>(maxLength: 100, nullable: false),
-                    Password = table.Column<string>(nullable: false),
-                    Email = table.Column<string>(nullable: false),
+                    Password = table.Column<string>(maxLength: 50, nullable: false),
+                    Email = table.Column<string>(maxLength: 50, nullable: false),
                     FullName = table.Column<string>(nullable: true),
                     JoinDate = table.Column<DateTime>(nullable: false),
                     Status = table.Column<int>(nullable: false)
@@ -45,9 +45,9 @@ namespace DOLPHIN.Model.Migrations
                 {
                     Id = table.Column<Guid>(nullable: false),
                     UpdatedDate = table.Column<DateTime>(nullable: true),
-                    UpdatedById = table.Column<string>(nullable: true),
+                    UpdatedById = table.Column<Guid>(nullable: false),
                     CreatedDate = table.Column<DateTime>(nullable: true),
-                    CreatedById = table.Column<string>(nullable: true),
+                    CreatedById = table.Column<Guid>(nullable: false),
                     ProductName = table.Column<string>(nullable: false),
                     Price = table.Column<string>(nullable: true),
                     Color = table.Column<string>(nullable: true),
@@ -63,13 +63,13 @@ namespace DOLPHIN.Model.Migrations
                         column: x => x.CreatedById,
                         principalTable: "Users",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Dolphin_Users_UpdatedById",
                         column: x => x.UpdatedById,
                         principalTable: "Users",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -78,9 +78,9 @@ namespace DOLPHIN.Model.Migrations
                 {
                     Id = table.Column<Guid>(nullable: false),
                     UpdatedDate = table.Column<DateTime>(nullable: true),
-                    UpdatedById = table.Column<string>(nullable: true),
+                    UpdatedById = table.Column<Guid>(nullable: false),
                     CreatedDate = table.Column<DateTime>(nullable: true),
-                    CreatedById = table.Column<string>(nullable: true),
+                    CreatedById = table.Column<Guid>(nullable: false),
                     Name = table.Column<string>(nullable: true),
                     Description = table.Column<string>(nullable: true)
                 },
@@ -92,20 +92,20 @@ namespace DOLPHIN.Model.Migrations
                         column: x => x.CreatedById,
                         principalTable: "Users",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Roles_Users_UpdatedById",
                         column: x => x.UpdatedById,
                         principalTable: "Users",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
                 name: "Comments",
                 columns: table => new
                 {
-                    UserId = table.Column<string>(nullable: false),
+                    UserId = table.Column<Guid>(nullable: false),
                     ProductId = table.Column<Guid>(nullable: false),
                     Description = table.Column<string>(nullable: true),
                     CreatedTime = table.Column<DateTime>(nullable: true)
@@ -155,7 +155,7 @@ namespace DOLPHIN.Model.Migrations
                 name: "RoleUser",
                 columns: table => new
                 {
-                    UserId = table.Column<string>(nullable: false),
+                    UserId = table.Column<Guid>(nullable: false),
                     RoleId = table.Column<Guid>(nullable: false)
                 },
                 constraints: table =>

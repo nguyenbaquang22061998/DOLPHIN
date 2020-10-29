@@ -11,7 +11,7 @@ namespace DOLPHIN.Model
         
         public DateTime? UpdatedDate { get; set; }
 
-        public string UpdatedById { get; set; }
+        public Guid UpdatedById { get; set; }
 
         [ForeignKey("UpdatedById")]
         [JsonIgnore]
@@ -19,7 +19,7 @@ namespace DOLPHIN.Model
 
         public DateTime? CreatedDate { get; set; }
 
-        public string CreatedById { get; set; }
+        public Guid CreatedById { get; set; }
 
         [ForeignKey("CreatedById")]
         [JsonIgnore]

@@ -12,3 +12,4 @@ D:\DOLPHIN\DOLPHIN\DOLPHIN.Repository\obj\Debug\netcoreapp3.1\DOLPHIN.Repository
 D:\DOLPHIN\DOLPHIN\DOLPHIN.Repository\bin\Debug\netcoreapp3.1\DOLPHIN.Model.dll
 D:\DOLPHIN\DOLPHIN\DOLPHIN.Repository\bin\Debug\netcoreapp3.1\DOLPHIN.Model.pdb
 D:\DOLPHIN\DOLPHIN\DOLPHIN.Repository\obj\Debug\netcoreapp3.1\DOLPHIN.Repository.csproj.CopyComplete
+D:\DOLPHIN\DOLPHIN\DOLPHIN.Repository\obj\Debug\netcoreapp3.1\DOLPHIN.Repository.csproj.CoreCompileInputs.cache
