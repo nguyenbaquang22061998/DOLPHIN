@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DOLPHIN\\DOLPHIN\\DOLPHIN.Exceptions\\DOLPHIN.Exceptions.csproj": {}
+    "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Exceptions\\DOLPHIN.Exceptions.csproj": {}
   },
   "projects": {
-    "D:\\DOLPHIN\\DOLPHIN\\DOLPHIN.Exceptions\\DOLPHIN.Exceptions.csproj": {
+    "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Exceptions\\DOLPHIN.Exceptions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DOLPHIN\\DOLPHIN\\DOLPHIN.Exceptions\\DOLPHIN.Exceptions.csproj",
+        "projectUniqueName": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Exceptions\\DOLPHIN.Exceptions.csproj",
         "projectName": "DOLPHIN.Exceptions",
-        "projectPath": "D:\\DOLPHIN\\DOLPHIN\\DOLPHIN.Exceptions\\DOLPHIN.Exceptions.csproj",
-        "packagesPath": "C:\\Users\\h\\.nuget\\packages\\",
-        "outputPath": "D:\\DOLPHIN\\DOLPHIN\\DOLPHIN.Exceptions\\obj\\",
+        "projectPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Exceptions\\DOLPHIN.Exceptions.csproj",
+        "packagesPath": "C:\\Users\\QN-DEV\\.nuget\\packages\\",
+        "outputPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Exceptions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\h\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\QN-DEV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

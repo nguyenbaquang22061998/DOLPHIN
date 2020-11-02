@@ -1169,24 +1169,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\h\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\QN-DEV\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DOLPHIN\\DOLPHIN\\DOLPHIN.Mapping\\DOLPHIN.Mapping.csproj",
+      "projectUniqueName": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Mapping\\DOLPHIN.Mapping.csproj",
       "projectName": "DOLPHIN.Mapping",
-      "projectPath": "D:\\DOLPHIN\\DOLPHIN\\DOLPHIN.Mapping\\DOLPHIN.Mapping.csproj",
-      "packagesPath": "C:\\Users\\h\\.nuget\\packages\\",
-      "outputPath": "D:\\DOLPHIN\\DOLPHIN\\DOLPHIN.Mapping\\obj\\",
+      "projectPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Mapping\\DOLPHIN.Mapping.csproj",
+      "packagesPath": "C:\\Users\\QN-DEV\\.nuget\\packages\\",
+      "outputPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Mapping\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\h\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\QN-DEV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -1198,11 +1199,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\DOLPHIN\\DOLPHIN\\DOLPHIN.DTO\\DOLPHIN.DTO.csproj": {
-              "projectPath": "D:\\DOLPHIN\\DOLPHIN\\DOLPHIN.DTO\\DOLPHIN.DTO.csproj"
+            "D:\\ĐATN\\DOLPHIN\\DOLPHIN.DTO\\DOLPHIN.DTO.csproj": {
+              "projectPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.DTO\\DOLPHIN.DTO.csproj"
             },
-            "D:\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj": {
-              "projectPath": "D:\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj"
+            "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj": {
+              "projectPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj"
             }
           }
         }

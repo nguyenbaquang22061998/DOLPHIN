@@ -10,3 +10,15 @@ D:\DOLPHIN\DOLPHIN\DOLPHIN.DTO\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.runtimeconfig
 D:\DOLPHIN\DOLPHIN\DOLPHIN.DTO\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.runtimeconfig.dev.json
 D:\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.csproj.CoreCompileInputs.cache
 D:\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.genruntimeconfig.cache
+D:\ĐATN\DOLPHIN\DOLPHIN.DTO\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.deps.json
+D:\ĐATN\DOLPHIN\DOLPHIN.DTO\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.runtimeconfig.json
+D:\ĐATN\DOLPHIN\DOLPHIN.DTO\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.runtimeconfig.dev.json
+D:\ĐATN\DOLPHIN\DOLPHIN.DTO\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.dll
+D:\ĐATN\DOLPHIN\DOLPHIN.DTO\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.pdb
+D:\ĐATN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.csprojAssemblyReference.cache
+D:\ĐATN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.AssemblyInfoInputs.cache
+D:\ĐATN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.AssemblyInfo.cs
+D:\ĐATN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.csproj.CoreCompileInputs.cache
+D:\ĐATN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.dll
+D:\ĐATN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.pdb
+D:\ĐATN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.genruntimeconfig.cache

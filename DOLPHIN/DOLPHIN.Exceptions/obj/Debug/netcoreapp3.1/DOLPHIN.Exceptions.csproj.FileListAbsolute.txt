@@ -1,0 +1,9 @@
+D:\ĐATN\DOLPHIN\DOLPHIN.Exceptions\bin\Debug\netcoreapp3.1\DOLPHIN.Exceptions.deps.json
+D:\ĐATN\DOLPHIN\DOLPHIN.Exceptions\bin\Debug\netcoreapp3.1\DOLPHIN.Exceptions.dll
+D:\ĐATN\DOLPHIN\DOLPHIN.Exceptions\bin\Debug\netcoreapp3.1\DOLPHIN.Exceptions.pdb
+D:\ĐATN\DOLPHIN\DOLPHIN.Exceptions\obj\Debug\netcoreapp3.1\DOLPHIN.Exceptions.csprojAssemblyReference.cache
+D:\ĐATN\DOLPHIN\DOLPHIN.Exceptions\obj\Debug\netcoreapp3.1\DOLPHIN.Exceptions.AssemblyInfoInputs.cache
+D:\ĐATN\DOLPHIN\DOLPHIN.Exceptions\obj\Debug\netcoreapp3.1\DOLPHIN.Exceptions.AssemblyInfo.cs
+D:\ĐATN\DOLPHIN\DOLPHIN.Exceptions\obj\Debug\netcoreapp3.1\DOLPHIN.Exceptions.csproj.CoreCompileInputs.cache
+D:\ĐATN\DOLPHIN\DOLPHIN.Exceptions\obj\Debug\netcoreapp3.1\DOLPHIN.Exceptions.dll
+D:\ĐATN\DOLPHIN\DOLPHIN.Exceptions\obj\Debug\netcoreapp3.1\DOLPHIN.Exceptions.pdb

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "DOLPHIN.Helpers/1.0.0": {
+        "runtime": {
+          "DOLPHIN.Helpers.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DOLPHIN.Helpers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -2,9 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DOLPHIN.Model;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -24,6 +26,12 @@ namespace DOLPHIN
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddMvc(options => options.EnableEndpointRouting = false);
+            services.AddControllers(options => options.EnableEndpointRouting = false);
+            services.AddRazorPages().AddMvcOptions(options => options.EnableEndpointRouting = false);
+            services.AddDbContext<ApplicationDBContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("VSECConnection")));
+            services.AddControllersWithViews(options => options.EnableEndpointRouting = false);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,6 +53,19 @@ namespace DOLPHIN
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}"
+                    );
+
+                routes.MapRoute(
+                    name: "areaRoute",
+                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+                    );
+            });
 
             app.UseEndpoints(endpoints =>
             {

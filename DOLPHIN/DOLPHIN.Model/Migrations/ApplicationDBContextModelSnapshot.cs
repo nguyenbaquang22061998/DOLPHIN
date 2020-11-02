@@ -17,6 +17,40 @@ namespace DOLPHIN.Model.Migrations
                 .HasAnnotation("ProductVersion", "3.1.9")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("DOLPHIN.Model.Categories", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)");
+
+                    b.Property<Guid>("CreatedById")
+                        .HasColumnType("char(50)");
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<Guid>("UpdatedById")
+                        .HasColumnType("char(50)");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CreatedById");
+
+                    b.HasIndex("UpdatedById");
+
+                    b.ToTable("Categories");
+                });
+
             modelBuilder.Entity("DOLPHIN.Model.Comments", b =>
                 {
                     b.Property<Guid>("UserId")
@@ -36,6 +70,140 @@ namespace DOLPHIN.Model.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("Comments");
+                });
+
+            modelBuilder.Entity("DOLPHIN.Model.News", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("CreatedById")
+                        .HasColumnType("char(50)");
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Images")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Refer")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Titile")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<Guid>("UpdatedById")
+                        .HasColumnType("char(50)");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CreatedById");
+
+                    b.HasIndex("UpdatedById");
+
+                    b.ToTable("News");
+                });
+
+            modelBuilder.Entity("DOLPHIN.Model.OrderDetails", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    b.Property<Guid>("CreatedById")
+                        .HasColumnType("char(50)");
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<Guid>("OrderId")
+                        .HasColumnType("char(36)");
+
+                    b.Property<Guid?>("OrdersId")
+                        .HasColumnType("char(36)");
+
+                    b.Property<string>("OtherDetail")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Price")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<Guid>("ProductId")
+                        .HasColumnType("char(36)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("UpdatedById")
+                        .HasColumnType("char(50)");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CreatedById");
+
+                    b.HasIndex("OrdersId");
+
+                    b.HasIndex("UpdatedById");
+
+                    b.ToTable("OrderDetails");
+                });
+
+            modelBuilder.Entity("DOLPHIN.Model.Orders", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)");
+
+                    b.Property<string>("Address")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<int>("Amount")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("CreatedById")
+                        .HasColumnType("char(50)");
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("GHNRef")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<int>("OrderStatusCode")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Phone")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<Guid>("UpdatedById")
+                        .HasColumnType("char(50)");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CreatedById");
+
+                    b.HasIndex("UpdatedById");
+
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("DOLPHIN.Model.Permissions", b =>
@@ -98,7 +266,7 @@ namespace DOLPHIN.Model.Migrations
 
                     b.HasIndex("UpdatedById");
 
-                    b.ToTable("Dolphin");
+                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("DOLPHIN.Model.RolePermission", b =>
@@ -113,7 +281,7 @@ namespace DOLPHIN.Model.Migrations
 
                     b.HasIndex("PermissionId");
 
-                    b.ToTable("RolePermission");
+                    b.ToTable("RolePermissions");
                 });
 
             modelBuilder.Entity("DOLPHIN.Model.RoleUser", b =>
@@ -128,7 +296,7 @@ namespace DOLPHIN.Model.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("RoleUser");
+                    b.ToTable("RoleUsers");
                 });
 
             modelBuilder.Entity("DOLPHIN.Model.Roles", b =>
@@ -206,6 +374,21 @@ namespace DOLPHIN.Model.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("DOLPHIN.Model.Categories", b =>
+                {
+                    b.HasOne("DOLPHIN.Model.Users", "CreatedBy")
+                        .WithMany()
+                        .HasForeignKey("CreatedById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DOLPHIN.Model.Users", "UpdatedBy")
+                        .WithMany()
+                        .HasForeignKey("UpdatedById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("DOLPHIN.Model.Comments", b =>
                 {
                     b.HasOne("DOLPHIN.Model.Products", "Products")
@@ -217,6 +400,55 @@ namespace DOLPHIN.Model.Migrations
                     b.HasOne("DOLPHIN.Model.Users", "Users")
                         .WithMany()
                         .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("DOLPHIN.Model.News", b =>
+                {
+                    b.HasOne("DOLPHIN.Model.Users", "CreatedBy")
+                        .WithMany()
+                        .HasForeignKey("CreatedById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DOLPHIN.Model.Users", "UpdatedBy")
+                        .WithMany()
+                        .HasForeignKey("UpdatedById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("DOLPHIN.Model.OrderDetails", b =>
+                {
+                    b.HasOne("DOLPHIN.Model.Users", "CreatedBy")
+                        .WithMany()
+                        .HasForeignKey("CreatedById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DOLPHIN.Model.Orders", null)
+                        .WithMany("OrderDetails")
+                        .HasForeignKey("OrdersId");
+
+                    b.HasOne("DOLPHIN.Model.Users", "UpdatedBy")
+                        .WithMany()
+                        .HasForeignKey("UpdatedById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("DOLPHIN.Model.Orders", b =>
+                {
+                    b.HasOne("DOLPHIN.Model.Users", "CreatedBy")
+                        .WithMany()
+                        .HasForeignKey("CreatedById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DOLPHIN.Model.Users", "UpdatedBy")
+                        .WithMany()
+                        .HasForeignKey("UpdatedById")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

@@ -37,6 +37,7 @@ namespace DOLPHIN.Service.Services
             this.mapper = mapper;
         }
 
+        /// <inheritdoc/>
         public async Task<bool> CreateCategory(CategoriesDto categoryDto, Guid currentUserId)
         {
             if (categoryDto == null)
@@ -52,6 +53,7 @@ namespace DOLPHIN.Service.Services
             return await this.unitOfWork.Commit() > 0;
         }
 
+        /// <inheritdoc/>
         public async Task<bool> DeleteCategory(Guid categoryId)
         {
             if (categoryId == null)
@@ -65,6 +67,7 @@ namespace DOLPHIN.Service.Services
             return await this.unitOfWork.Commit() > 0;
         }
 
+        /// <inheritdoc/>
         public async Task<IEnumerable<CategoriesDto>> GetAllCategories()
         {
             var categories = (await this.unitOfWork.CategoryRepository.GetAll())
@@ -72,11 +75,12 @@ namespace DOLPHIN.Service.Services
             return categories;
         }
 
+        /// <inheritdoc/>
         public async Task<bool> UpdateCategory(CategoriesDto categoryDto, Guid currentUserId)
         {
             if (categoryDto == null)
             {
-                throw false;
+                return false;
             }
 
             var category = await this.unitOfWork.CategoryRepository.GetCategoryById(categoryDto.Id);

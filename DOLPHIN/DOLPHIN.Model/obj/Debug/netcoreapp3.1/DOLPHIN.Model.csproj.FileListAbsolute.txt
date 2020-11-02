@@ -18,3 +18,15 @@ D:\DOLPHIN\DOLPHIN\DOLPHIN.Model\obj\Debug\netcoreapp3.1\DOLPHIN.Model.dll
 D:\DOLPHIN\DOLPHIN\DOLPHIN.Model\obj\Debug\netcoreapp3.1\DOLPHIN.Model.pdb
 D:\DOLPHIN\DOLPHIN\DOLPHIN.Model\obj\Debug\netcoreapp3.1\DOLPHIN.Model.genruntimeconfig.cache
 D:\DOLPHIN\DOLPHIN\DOLPHIN.Model\obj\Debug\netcoreapp3.1\DOLPHIN.Model.csprojAssemblyReference.cache
+D:\ĐATN\DOLPHIN\DOLPHIN.Model\bin\Debug\netcoreapp3.1\DOLPHIN.Model.deps.json
+D:\ĐATN\DOLPHIN\DOLPHIN.Model\bin\Debug\netcoreapp3.1\DOLPHIN.Model.runtimeconfig.json
+D:\ĐATN\DOLPHIN\DOLPHIN.Model\bin\Debug\netcoreapp3.1\DOLPHIN.Model.runtimeconfig.dev.json
+D:\ĐATN\DOLPHIN\DOLPHIN.Model\bin\Debug\netcoreapp3.1\DOLPHIN.Model.dll
+D:\ĐATN\DOLPHIN\DOLPHIN.Model\bin\Debug\netcoreapp3.1\DOLPHIN.Model.pdb
+D:\ĐATN\DOLPHIN\DOLPHIN.Model\obj\Debug\netcoreapp3.1\DOLPHIN.Model.csprojAssemblyReference.cache
+D:\ĐATN\DOLPHIN\DOLPHIN.Model\obj\Debug\netcoreapp3.1\DOLPHIN.Model.AssemblyInfoInputs.cache
+D:\ĐATN\DOLPHIN\DOLPHIN.Model\obj\Debug\netcoreapp3.1\DOLPHIN.Model.AssemblyInfo.cs
+D:\ĐATN\DOLPHIN\DOLPHIN.Model\obj\Debug\netcoreapp3.1\DOLPHIN.Model.csproj.CoreCompileInputs.cache
+D:\ĐATN\DOLPHIN\DOLPHIN.Model\obj\Debug\netcoreapp3.1\DOLPHIN.Model.dll
+D:\ĐATN\DOLPHIN\DOLPHIN.Model\obj\Debug\netcoreapp3.1\DOLPHIN.Model.pdb
+D:\ĐATN\DOLPHIN\DOLPHIN.Model\obj\Debug\netcoreapp3.1\DOLPHIN.Model.genruntimeconfig.cache

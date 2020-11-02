@@ -23,7 +23,15 @@ namespace DOLPHIN.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Details()
+        {
+            return View();
+        }
+        public IActionResult Shop()
+        {
+            return View();
+        }
+        public IActionResult Contact()
         {
             return View();
         }

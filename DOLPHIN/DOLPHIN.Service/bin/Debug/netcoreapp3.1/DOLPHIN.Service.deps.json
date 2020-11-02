@@ -10,11 +10,13 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.0",
           "DOLPHIN.DTO": "1.0.0",
+          "DOLPHIN.Helpers": "1.0.0",
+          "DOLPHIN.Model": "1.0.0",
           "DOLPHIN.Repository": "1.0.0",
-          "Microsoft.EntityFrameworkCore.Design": "3.1.9",
           "Microsoft.EntityFrameworkCore.Relational": "3.1.9",
           "StyleCop.Analyzers": "1.1.118",
-          "System.Linq.Dynamic.Core": "1.2.5"
+          "System.Linq.Dynamic.Core": "1.2.5",
+          "System.Runtime.Serialization.Formatters": "4.3.0"
         },
         "runtime": {
           "DOLPHIN.Service.dll": {}
@@ -91,18 +93,6 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/3.1.9": {},
-      "Microsoft.EntityFrameworkCore.Design/3.1.9": {
-        "dependencies": {
-          "Microsoft.CSharp": "4.7.0",
-          "Microsoft.EntityFrameworkCore.Relational": "3.1.9"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll": {
-            "assemblyVersion": "3.1.9.0",
-            "fileVersion": "3.100.920.47303"
-          }
-        }
-      },
       "Microsoft.EntityFrameworkCore.Relational/3.1.9": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "3.1.9"
@@ -446,6 +436,11 @@
           "DOLPHIN.DTO.dll": {}
         }
       },
+      "DOLPHIN.Helpers/1.0.0": {
+        "runtime": {
+          "DOLPHIN.Helpers.dll": {}
+        }
+      },
       "DOLPHIN.Model/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "3.1.9",
@@ -531,13 +526,6 @@
       "sha512": "sha512-eXGyx/Lb1fiiKtnIStdxGrfBSSQg8oZytE10f1T/2xAx12W9dKB9U9fg05cwNCDC0S2CXILsmZHYaGqCSXVAqQ==",
       "path": "microsoft.entityframeworkcore.analyzers/3.1.9",
       "hashPath": "microsoft.entityframeworkcore.analyzers.3.1.9.nupkg.sha512"
-    },
-    "Microsoft.EntityFrameworkCore.Design/3.1.9": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-2zgP7BWcw5nqGQiT4bEtiI6ras+4pvKg5D+tA3AYvjEifzzaWvmRTb3B9nRHpIYJAhPtmWNBVnVXLbu3fS1OYA==",
-      "path": "microsoft.entityframeworkcore.design/3.1.9",
-      "hashPath": "microsoft.entityframeworkcore.design.3.1.9.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/3.1.9": {
       "type": "package",
@@ -820,6 +808,11 @@
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
     "DOLPHIN.DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DOLPHIN.Helpers/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
