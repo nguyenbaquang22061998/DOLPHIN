@@ -11,6 +11,8 @@ namespace DOLPHIN.Mapping
         {
             this.CreateMap<Categories, CategoriesDto>();
             this.CreateMap<CategoriesDto, Categories>();
+            this.CreateMap<UsersDto, Users>();
+            this.CreateMap<Users, UsersDto>();
         }
     }
 }

@@ -1,25 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Service\\DOLPHIN.Service.csproj": {}
+    "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Service\\DOLPHIN.Service.csproj": {}
   },
   "projects": {
-    "D:\\ĐATN\\DOLPHIN\\DOLPHIN.DTO\\DOLPHIN.DTO.csproj": {
+    "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.DTO\\DOLPHIN.DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.DTO\\DOLPHIN.DTO.csproj",
+        "projectUniqueName": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.DTO\\DOLPHIN.DTO.csproj",
         "projectName": "DOLPHIN.DTO",
-        "projectPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.DTO\\DOLPHIN.DTO.csproj",
-        "packagesPath": "C:\\Users\\QN-DEV\\.nuget\\packages\\",
-        "outputPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.DTO\\obj\\",
+        "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.DTO\\DOLPHIN.DTO.csproj",
+        "packagesPath": "C:\\Users\\h\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.DTO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\QN-DEV\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\h\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -68,22 +67,21 @@
         }
       }
     },
-    "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Helpers\\DOLPHIN.Helpers.csproj": {
+    "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Helpers\\DOLPHIN.Helpers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Helpers\\DOLPHIN.Helpers.csproj",
+        "projectUniqueName": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Helpers\\DOLPHIN.Helpers.csproj",
         "projectName": "DOLPHIN.Helpers",
-        "projectPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Helpers\\DOLPHIN.Helpers.csproj",
-        "packagesPath": "C:\\Users\\QN-DEV\\.nuget\\packages\\",
-        "outputPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Helpers\\obj\\",
+        "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Helpers\\DOLPHIN.Helpers.csproj",
+        "packagesPath": "C:\\Users\\h\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Helpers\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\QN-DEV\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\h\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -124,22 +122,21 @@
         }
       }
     },
-    "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj": {
+    "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj",
+        "projectUniqueName": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj",
         "projectName": "DOLPHIN.Model",
-        "projectPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj",
-        "packagesPath": "C:\\Users\\QN-DEV\\.nuget\\packages\\",
-        "outputPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Model\\obj\\",
+        "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj",
+        "packagesPath": "C:\\Users\\h\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\QN-DEV\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\h\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -206,22 +203,21 @@
         }
       }
     },
-    "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj": {
+    "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj",
         "projectName": "DOLPHIN.Repository",
-        "projectPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj",
-        "packagesPath": "C:\\Users\\QN-DEV\\.nuget\\packages\\",
-        "outputPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Repository\\obj\\",
+        "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj",
+        "packagesPath": "C:\\Users\\h\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\QN-DEV\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\h\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -233,8 +229,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj": {
-                "projectPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj"
+              "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj": {
+                "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj"
               }
             }
           }
@@ -296,22 +292,21 @@
         }
       }
     },
-    "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Service\\DOLPHIN.Service.csproj": {
+    "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Service\\DOLPHIN.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Service\\DOLPHIN.Service.csproj",
+        "projectUniqueName": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Service\\DOLPHIN.Service.csproj",
         "projectName": "DOLPHIN.Service",
-        "projectPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Service\\DOLPHIN.Service.csproj",
-        "packagesPath": "C:\\Users\\QN-DEV\\.nuget\\packages\\",
-        "outputPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Service\\obj\\",
+        "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Service\\DOLPHIN.Service.csproj",
+        "packagesPath": "C:\\Users\\h\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\QN-DEV\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\h\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -323,17 +318,17 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\ĐATN\\DOLPHIN\\DOLPHIN.DTO\\DOLPHIN.DTO.csproj": {
-                "projectPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.DTO\\DOLPHIN.DTO.csproj"
+              "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.DTO\\DOLPHIN.DTO.csproj": {
+                "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.DTO\\DOLPHIN.DTO.csproj"
               },
-              "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Helpers\\DOLPHIN.Helpers.csproj": {
-                "projectPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Helpers\\DOLPHIN.Helpers.csproj"
+              "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Helpers\\DOLPHIN.Helpers.csproj": {
+                "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Helpers\\DOLPHIN.Helpers.csproj"
               },
-              "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj": {
-                "projectPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj"
+              "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj": {
+                "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj"
               },
-              "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj": {
-                "projectPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj"
+              "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj": {
+                "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj"
               }
             }
           }

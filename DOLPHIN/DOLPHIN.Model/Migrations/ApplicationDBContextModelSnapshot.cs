@@ -229,6 +229,9 @@ namespace DOLPHIN.Model.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)");
 
+                    b.Property<Guid>("CategoryId")
+                        .HasColumnType("char(36)");
+
                     b.Property<string>("Color")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
@@ -245,7 +248,6 @@ namespace DOLPHIN.Model.Migrations
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("ProductName")
-                        .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("Size")

@@ -1,8 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
+using AutoMapper;
+using DOLPHIN.Mapping;
 using DOLPHIN.Model;
+using DOLPHIN.Modules;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -20,11 +26,18 @@ namespace DOLPHIN
             Configuration = configuration;
         }
 
+        public IContainer ApplicationContainer { get; private set; }
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public IServiceProvider ConfigureServices(IServiceCollection services)
         {
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+            services.AddMemoryCache();
+
+            // _ = services.AddAutoMapper(c => c.AddProfile(new DtoProfile()));
+            services.AddAutoMapper(typeof(DtoProfile));
+            services.AddSingleton(this.Configuration);
             services.AddControllersWithViews();
             services.AddMvc(options => options.EnableEndpointRouting = false);
             services.AddControllers(options => options.EnableEndpointRouting = false);
@@ -32,6 +45,17 @@ namespace DOLPHIN
             services.AddDbContext<ApplicationDBContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("VSECConnection")));
             services.AddControllersWithViews(options => options.EnableEndpointRouting = false);
+
+            var builder = new ContainerBuilder();
+            builder.Populate(services);
+            builder.RegisterModule(new ServiceModule());
+            builder.RegisterModule(new EfModule());
+            builder.RegisterModule(new LoggerModule());
+            builder.RegisterModule(new MappingModule());
+            builder.RegisterModule(new UnitOfWorkModule());
+            builder.RegisterModule(new HelperModule());
+            this.ApplicationContainer = builder.Build();
+            return new AutofacServiceProvider(this.ApplicationContainer);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

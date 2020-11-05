@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DOLPHIN.Model;
+using DOLPHIN.DTO;
+using AutoMapper;
+using DOLPHIN.Repository.UnitOfWorks.Interfaces;
 
 namespace DOLPHIN.Areas.Admin.Controllers
 {
@@ -13,28 +16,32 @@ namespace DOLPHIN.Areas.Admin.Controllers
     public class UsersController : Controller
     {
         private readonly ApplicationDBContext _context;
+        private readonly IMapper mapper;
+        private readonly IUserUnitOfWork unitOfWork;
 
-        public UsersController(ApplicationDBContext context)
+        public UsersController(ApplicationDBContext context, IMapper mapper, IUserUnitOfWork unitOfWork)
         {
             _context = context;
+            this.mapper = mapper;
+            this.unitOfWork = unitOfWork;
         }
 
         // GET: Admin/Users
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            return View(await _context.Users.ToListAsync());
+            var listUsers = _context.Users;
+            return View(listUsers.ToList());
         }
 
         // GET: Admin/Users/Details/5
-        public async Task<IActionResult> Details(Guid? id)
+        public IActionResult Details(Guid? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var users = await _context.Users
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var users = _context.Users.FirstOrDefault(m => m.Id == id);
             if (users == null)
             {
                 return NotFound();
@@ -53,17 +60,18 @@ namespace DOLPHIN.Areas.Admin.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,UserName,Password,Email,FullName,JoinDate,Status")] Users users)
+        public async Task<IActionResult> Create(UsersDto usersDto)
         {
             if (ModelState.IsValid)
             {
-                users.Id = Guid.NewGuid();
-                _context.Add(users);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                usersDto.Id = Guid.NewGuid();
+                usersDto.JoinDate = DateTime.Now;
+                usersDto.Status = 0;
+                await this.unitOfWork.UserRepository.Add(this.mapper.Map < Users > (usersDto));
+                await this.unitOfWork.Commit();
+                return Redirect("/Admin/Users");
             }
-            return View(users);
+            return View(usersDto);
         }
 
         // GET: Admin/Users/Edit/5

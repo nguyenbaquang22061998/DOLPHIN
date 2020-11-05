@@ -8,6 +8,7 @@ namespace DOLPHIN.Model
         [Key]
         public Guid Id { get; set; }
         [Required]
+        public Guid CategoryId { get; set; }
         public string ProductName { get; set; }
         public string Price { get; set; }
         public string Color { get; set; }

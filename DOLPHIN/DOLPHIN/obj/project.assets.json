@@ -2,6 +2,31 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "Autofac/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.DiagnosticSource": "4.7.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Autofac.dll": {}
+        }
+      },
+      "Autofac.Extensions.DependencyInjection/7.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Autofac": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/Autofac.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Autofac.Extensions.DependencyInjection.dll": {}
+        }
+      },
       "AutoMapper/10.1.1": {
         "type": "package",
         "dependencies": {
@@ -2969,6 +2994,10 @@
       "DOLPHIN.WebApi/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Autofac": "6.0.0",
+          "DOLPHIN.Repository": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/DOLPHIN.WebApi.dll": {}
         },
@@ -2982,6 +3011,42 @@
     }
   },
   "libraries": {
+    "Autofac/6.0.0": {
+      "sha512": "tRVRXGxwXbQmPy1ZGso115O55ffVW4mWtufjOy7hduQ1BNVR1j7RQQjxpYuB6tJw5OrgqRWYVJLJ8RwYNz/j+A==",
+      "type": "package",
+      "path": "autofac/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "autofac.6.0.0.nupkg.sha512",
+        "autofac.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/Autofac.dll",
+        "lib/netstandard2.0/Autofac.pdb",
+        "lib/netstandard2.0/Autofac.xml",
+        "lib/netstandard2.1/Autofac.dll",
+        "lib/netstandard2.1/Autofac.pdb",
+        "lib/netstandard2.1/Autofac.xml"
+      ]
+    },
+    "Autofac.Extensions.DependencyInjection/7.1.0": {
+      "sha512": "nm6rZREZ9tjdKXu9cmT69zHkZODagjCPlRRCOhiS1VqFFis9LQnMl18L4OYr8yfCW1WAQkFDD2CNaK/kF5Eqeg==",
+      "type": "package",
+      "path": "autofac.extensions.dependencyinjection/7.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
+        "autofac.extensions.dependencyinjection.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.pdb",
+        "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.1/Autofac.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.1/Autofac.Extensions.DependencyInjection.pdb",
+        "lib/netstandard2.1/Autofac.Extensions.DependencyInjection.xml"
+      ]
+    },
     "AutoMapper/10.1.1": {
       "sha512": "uMgbqOdu9ZG5cIOty0C85hzzayBH2i9BthnS5FlMqKtMSHDv4ts81a2jS1VFaDBVhlBeIqJ/kQKjQY95BZde9w==",
       "type": "package",
@@ -9302,6 +9367,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Autofac.Extensions.DependencyInjection >= 7.1.0",
       "DOLPHIN.DTO >= 1.0.0",
       "DOLPHIN.Exceptions >= 1.0.0",
       "DOLPHIN.Helpers >= 1.0.0",
@@ -9318,25 +9384,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\QN-DEV\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\h\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ĐATN\\DOLPHIN\\DOLPHIN\\DOLPHIN.csproj",
+      "projectUniqueName": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN\\DOLPHIN.csproj",
       "projectName": "DOLPHIN",
-      "projectPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN\\DOLPHIN.csproj",
-      "packagesPath": "C:\\Users\\QN-DEV\\.nuget\\packages\\",
-      "outputPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN\\obj\\",
+      "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN\\DOLPHIN.csproj",
+      "packagesPath": "C:\\Users\\h\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\QN-DEV\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\h\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -9348,29 +9413,29 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\ĐATN\\DOLPHIN\\DOLPHIN.DTO\\DOLPHIN.DTO.csproj": {
-              "projectPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.DTO\\DOLPHIN.DTO.csproj"
+            "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.DTO\\DOLPHIN.DTO.csproj": {
+              "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.DTO\\DOLPHIN.DTO.csproj"
             },
-            "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Exceptions\\DOLPHIN.Exceptions.csproj": {
-              "projectPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Exceptions\\DOLPHIN.Exceptions.csproj"
+            "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Exceptions\\DOLPHIN.Exceptions.csproj": {
+              "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Exceptions\\DOLPHIN.Exceptions.csproj"
             },
-            "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Helpers\\DOLPHIN.Helpers.csproj": {
-              "projectPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Helpers\\DOLPHIN.Helpers.csproj"
+            "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Helpers\\DOLPHIN.Helpers.csproj": {
+              "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Helpers\\DOLPHIN.Helpers.csproj"
             },
-            "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Mapping\\DOLPHIN.Mapping.csproj": {
-              "projectPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Mapping\\DOLPHIN.Mapping.csproj"
+            "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Mapping\\DOLPHIN.Mapping.csproj": {
+              "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Mapping\\DOLPHIN.Mapping.csproj"
             },
-            "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj": {
-              "projectPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj"
+            "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj": {
+              "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj"
             },
-            "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj": {
-              "projectPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj"
+            "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj": {
+              "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj"
             },
-            "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Service\\DOLPHIN.Service.csproj": {
-              "projectPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.Service\\DOLPHIN.Service.csproj"
+            "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Service\\DOLPHIN.Service.csproj": {
+              "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Service\\DOLPHIN.Service.csproj"
             },
-            "D:\\ĐATN\\DOLPHIN\\DOLPHIN.WebApi\\DOLPHIN.WebApi.csproj": {
-              "projectPath": "D:\\ĐATN\\DOLPHIN\\DOLPHIN.WebApi\\DOLPHIN.WebApi.csproj"
+            "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.WebApi\\DOLPHIN.WebApi.csproj": {
+              "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.WebApi\\DOLPHIN.WebApi.csproj"
             }
           }
         }
@@ -9384,6 +9449,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "Autofac.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[7.1.0, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",

@@ -7,3 +7,12 @@ D:\ĐATN\DOLPHIN\DOLPHIN.Helpers\obj\Debug\netcoreapp3.1\DOLPHIN.Helpers.Assembl
 D:\ĐATN\DOLPHIN\DOLPHIN.Helpers\obj\Debug\netcoreapp3.1\DOLPHIN.Helpers.csproj.CoreCompileInputs.cache
 D:\ĐATN\DOLPHIN\DOLPHIN.Helpers\obj\Debug\netcoreapp3.1\DOLPHIN.Helpers.dll
 D:\ĐATN\DOLPHIN\DOLPHIN.Helpers\obj\Debug\netcoreapp3.1\DOLPHIN.Helpers.pdb
+C:\Users\h\Desktop\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Helpers\bin\Debug\netcoreapp3.1\DOLPHIN.Helpers.deps.json
+C:\Users\h\Desktop\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Helpers\bin\Debug\netcoreapp3.1\DOLPHIN.Helpers.dll
+C:\Users\h\Desktop\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Helpers\bin\Debug\netcoreapp3.1\DOLPHIN.Helpers.pdb
+C:\Users\h\Desktop\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Helpers\obj\Debug\netcoreapp3.1\DOLPHIN.Helpers.csprojAssemblyReference.cache
+C:\Users\h\Desktop\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Helpers\obj\Debug\netcoreapp3.1\DOLPHIN.Helpers.AssemblyInfoInputs.cache
+C:\Users\h\Desktop\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Helpers\obj\Debug\netcoreapp3.1\DOLPHIN.Helpers.AssemblyInfo.cs
+C:\Users\h\Desktop\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Helpers\obj\Debug\netcoreapp3.1\DOLPHIN.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\h\Desktop\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Helpers\obj\Debug\netcoreapp3.1\DOLPHIN.Helpers.dll
+C:\Users\h\Desktop\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Helpers\obj\Debug\netcoreapp3.1\DOLPHIN.Helpers.pdb
