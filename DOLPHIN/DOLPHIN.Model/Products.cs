@@ -11,6 +11,7 @@ namespace DOLPHIN.Model
         public Guid CategoryId { get; set; }
         public string ProductName { get; set; }
         public string Price { get; set; }
+        public string Images { get; set; }
         public string Color { get; set; }
         public string Size { get; set; }
         public string Desciption { get; set; }

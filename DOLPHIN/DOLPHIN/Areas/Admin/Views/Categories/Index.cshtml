@@ -59,15 +59,9 @@
                             @Html.DisplayFor(modelItem => item.CreatedBy.UserName)
                         </td>
                         <td class="text-center">
-                            <span class="badge bg-warning">
-                                <a asp-action="Edit" asp-route-id="@item.Id">Sửa</a> 
-                            </span>
-                            <span class="badge bg-success">
-                                <a asp-action="Details" asp-route-id="@item.Id">Chi tiết</a>
-                            </span>
-                            <span class="badge bg-danger">
-                                <a asp-action="Delete" asp-route-id="@item.Id">Xóa</a>
-                            </span>
+                            <span class="badge bg-warning"><a href="/Admin/Categories/Edit/@item.Id">Sửa</a></span> 
+                            <span class="badge bg-success"><a href="/Admin/Categories/Details/@item.Id">Chi tiết</a></span> 
+                            <span class="badge bg-danger"><a href="/Admin/Categories/Delete/@item.Id">Xóa</a></span>
                         </td>
                     </tr>
                 }

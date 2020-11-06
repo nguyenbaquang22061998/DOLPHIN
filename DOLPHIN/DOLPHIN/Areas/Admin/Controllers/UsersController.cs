@@ -151,7 +151,7 @@ namespace DOLPHIN.Areas.Admin.Controllers
             var users = await _context.Users.FindAsync(id);
             _context.Users.Remove(users);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return Redirect("/Admin/Users/Index");
         }
 
         private bool UsersExists(Guid id)

@@ -59,7 +59,7 @@ namespace DOLPHIN.Areas.Admin.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,CategoryId,ProductName,Price,Color,Size,Desciption,Status,UpdatedDate,UpdatedById,CreatedDate,CreatedById")] Products products)
+        public async Task<IActionResult> Create(Products products, HttpPostAttribute file)
         {
             if (ModelState.IsValid)
             {

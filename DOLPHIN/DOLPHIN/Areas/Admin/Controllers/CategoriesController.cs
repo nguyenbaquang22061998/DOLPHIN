@@ -59,17 +59,19 @@ namespace DOLPHIN.Areas.Admin.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Description,UpdatedDate,UpdatedById,CreatedDate,CreatedById")] Categories categories)
+        public async Task<IActionResult> Create(Categories categories)
         {
+            Guid userId = new Guid("75d61ad5-742b-4965-ba48-0ae6995e22a0");
             if (ModelState.IsValid)
             {
                 categories.Id = Guid.NewGuid();
+                categories.CreatedById = userId;
+                categories.UpdatedById = userId;
+                categories.CreatedDate = DateTime.Now;
                 _context.Add(categories);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return Redirect("/Admin/Categories/Index");
             }
-            ViewData["CreatedById"] = new SelectList(_context.Users, "Id", "Email", categories.CreatedById);
-            ViewData["UpdatedById"] = new SelectList(_context.Users, "Id", "Email", categories.UpdatedById);
             return View(categories);
         }
 
@@ -156,7 +158,7 @@ namespace DOLPHIN.Areas.Admin.Controllers
             var categories = await _context.Categories.FindAsync(id);
             _context.Categories.Remove(categories);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return Redirect("/Admin/Categories/Index");
         }
 
         private bool CategoriesExists(Guid id)
