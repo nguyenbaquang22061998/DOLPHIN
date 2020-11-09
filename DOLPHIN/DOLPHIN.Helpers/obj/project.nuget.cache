@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "gtHoD3a0gGQai8P2oxUpPvU8Fkd8rog1/iw7S0/tB9M3LQc9oQfTN93b/k2koySAfy4+CFd5HfQlsGPwPdqq1Q==",
+  "dgSpecHash": "ozX3xSoYh4pqYAYeNugPRSpmgcwIUNluI7YBD/0goKeFXPT+cP0CyLnCE31cTZ2WNbpNnqugcE+MGfTn12SK7Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\h\\Desktop\\DAI HOC\\Đồ án tốt nghiệp\\DOLPHIN\\DOLPHIN\\DOLPHIN.Helpers\\DOLPHIN.Helpers.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.Helpers\\DOLPHIN.Helpers.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\QN-DEV\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.9\\microsoft.extensions.configuration.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\QN-DEV\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.9\\microsoft.extensions.primitives.3.1.9.nupkg.sha512"
+  ],
   "logs": []
 }

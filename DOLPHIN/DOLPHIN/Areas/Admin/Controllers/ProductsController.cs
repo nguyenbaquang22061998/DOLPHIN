@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DOLPHIN.Model;
+using Microsoft.AspNetCore.Http;
+using System.IO;
 
 namespace DOLPHIN.Areas.Admin.Controllers
 {
@@ -13,7 +15,6 @@ namespace DOLPHIN.Areas.Admin.Controllers
     public class ProductsController : Controller
     {
         private readonly ApplicationDBContext _context;
-
         public ProductsController(ApplicationDBContext context)
         {
             _context = context;
@@ -22,8 +23,8 @@ namespace DOLPHIN.Areas.Admin.Controllers
         // GET: Admin/Products
         public async Task<IActionResult> Index()
         {
-            var applicationDBContext = _context.Products.Include(p => p.CreatedBy).Include(p => p.UpdatedBy);
-            return View(await applicationDBContext.ToListAsync());
+            var productsList = await _context.Products.Include(p => p.CreatedBy).Include(p => p.UpdatedBy).ToListAsync();
+            return View(productsList);
         }
 
         // GET: Admin/Products/Details/5
@@ -59,17 +60,37 @@ namespace DOLPHIN.Areas.Admin.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Products products, HttpPostAttribute file)
+        public async Task<IActionResult> Create(Products products, List<IFormFile> file)
         {
+            Guid userId = new Guid("fb18e1ca-4341-471e-8bba-068d3f73da1b");
             if (ModelState.IsValid)
             {
                 products.Id = Guid.NewGuid();
+                products.CreatedById = userId;
+                products.UpdatedById = userId;
+                products.CreatedDate = DateTime.Now;
+                long size = file.Sum(f => f.Length);
+
+                var filePaths = new List<string>();
+                foreach (var formFile in file)
+                {
+                    if (formFile.Length > 0)
+                    {
+                        // full path to file in temp location
+                        var fileName = Path.GetFileName(formFile.FileName);
+                        var filePath = Path.Combine(Path.GetTempPath(), Path.GetRandomFileName());
+                        filePaths.Add(filePath);
+                        using (var stream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await formFile.CopyToAsync(stream);
+                        }
+                        products.Images = fileName;
+                    }
+                }
                 _context.Add(products);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return Redirect("/Admin/Products/Index");
             }
-            ViewData["CreatedById"] = new SelectList(_context.Users, "Id", "Email", products.CreatedById);
-            ViewData["UpdatedById"] = new SelectList(_context.Users, "Id", "Email", products.UpdatedById);
             return View(products);
         }
 

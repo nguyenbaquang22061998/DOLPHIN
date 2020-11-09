@@ -70,7 +70,9 @@
                         @Html.DisplayFor(modelItem => item.Desciption)
                     </td>
                     <td class="text-center">
-                        @Html.DisplayFor(modelItem => item.Images)
+                        <div>
+                            <img src="@Url.Content("~/images/"+item.Images)" width="110" height="110">
+                        </div>
                     </td>
                     <td class="text-center">
                         @Html.DisplayFor(modelItem => item.Status)

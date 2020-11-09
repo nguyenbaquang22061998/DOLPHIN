@@ -43,3 +43,20 @@ C:\Users\h\Desktop\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Mapp
 C:\Users\h\Desktop\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.dll
 C:\Users\h\Desktop\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.pdb
 C:\Users\h\Desktop\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.genruntimeconfig.cache
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\bin\Debug\netcoreapp3.1\DOLPHIN.Mapping.deps.json
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\bin\Debug\netcoreapp3.1\DOLPHIN.Mapping.runtimeconfig.json
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\bin\Debug\netcoreapp3.1\DOLPHIN.Mapping.runtimeconfig.dev.json
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\bin\Debug\netcoreapp3.1\DOLPHIN.Mapping.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\bin\Debug\netcoreapp3.1\DOLPHIN.Mapping.pdb
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\bin\Debug\netcoreapp3.1\DOLPHIN.Model.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.pdb
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\bin\Debug\netcoreapp3.1\DOLPHIN.Model.pdb
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.csprojAssemblyReference.cache
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.AssemblyInfoInputs.cache
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.AssemblyInfo.cs
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.csproj.CoreCompileInputs.cache
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.csproj.CopyComplete
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.pdb
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.genruntimeconfig.cache

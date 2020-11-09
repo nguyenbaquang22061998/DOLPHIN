@@ -42,3 +42,15 @@ C:\Users\h\Desktop\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Mode
 C:\Users\h\Desktop\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Model\obj\Debug\netcoreapp3.1\DOLPHIN.Model.dll
 C:\Users\h\Desktop\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Model\obj\Debug\netcoreapp3.1\DOLPHIN.Model.pdb
 C:\Users\h\Desktop\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Model\obj\Debug\netcoreapp3.1\DOLPHIN.Model.genruntimeconfig.cache
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Model\bin\Debug\netcoreapp3.1\DOLPHIN.Model.deps.json
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Model\bin\Debug\netcoreapp3.1\DOLPHIN.Model.runtimeconfig.json
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Model\bin\Debug\netcoreapp3.1\DOLPHIN.Model.runtimeconfig.dev.json
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Model\bin\Debug\netcoreapp3.1\DOLPHIN.Model.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Model\bin\Debug\netcoreapp3.1\DOLPHIN.Model.pdb
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Model\obj\Debug\netcoreapp3.1\DOLPHIN.Model.csprojAssemblyReference.cache
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Model\obj\Debug\netcoreapp3.1\DOLPHIN.Model.AssemblyInfoInputs.cache
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Model\obj\Debug\netcoreapp3.1\DOLPHIN.Model.AssemblyInfo.cs
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Model\obj\Debug\netcoreapp3.1\DOLPHIN.Model.csproj.CoreCompileInputs.cache
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Model\obj\Debug\netcoreapp3.1\DOLPHIN.Model.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Model\obj\Debug\netcoreapp3.1\DOLPHIN.Model.pdb
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Model\obj\Debug\netcoreapp3.1\DOLPHIN.Model.genruntimeconfig.cache

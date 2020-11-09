@@ -34,3 +34,15 @@ C:\Users\h\Desktop\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.DTO\
 C:\Users\h\Desktop\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.dll
 C:\Users\h\Desktop\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.pdb
 C:\Users\h\Desktop\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.genruntimeconfig.cache
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.DTO\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.deps.json
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.DTO\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.runtimeconfig.json
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.DTO\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.runtimeconfig.dev.json
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.DTO\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.DTO\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.pdb
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.csprojAssemblyReference.cache
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.AssemblyInfoInputs.cache
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.AssemblyInfo.cs
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.csproj.CoreCompileInputs.cache
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.pdb
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.genruntimeconfig.cache

@@ -16,3 +16,12 @@ C:\Users\h\Desktop\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Exce
 C:\Users\h\Desktop\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Exceptions\obj\Debug\netcoreapp3.1\DOLPHIN.Exceptions.csproj.CoreCompileInputs.cache
 C:\Users\h\Desktop\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Exceptions\obj\Debug\netcoreapp3.1\DOLPHIN.Exceptions.dll
 C:\Users\h\Desktop\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Exceptions\obj\Debug\netcoreapp3.1\DOLPHIN.Exceptions.pdb
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Exceptions\bin\Debug\netcoreapp3.1\DOLPHIN.Exceptions.deps.json
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Exceptions\bin\Debug\netcoreapp3.1\DOLPHIN.Exceptions.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Exceptions\bin\Debug\netcoreapp3.1\DOLPHIN.Exceptions.pdb
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Exceptions\obj\Debug\netcoreapp3.1\DOLPHIN.Exceptions.csprojAssemblyReference.cache
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Exceptions\obj\Debug\netcoreapp3.1\DOLPHIN.Exceptions.AssemblyInfoInputs.cache
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Exceptions\obj\Debug\netcoreapp3.1\DOLPHIN.Exceptions.AssemblyInfo.cs
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Exceptions\obj\Debug\netcoreapp3.1\DOLPHIN.Exceptions.csproj.CoreCompileInputs.cache
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Exceptions\obj\Debug\netcoreapp3.1\DOLPHIN.Exceptions.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.Exceptions\obj\Debug\netcoreapp3.1\DOLPHIN.Exceptions.pdb

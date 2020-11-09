@@ -13,7 +13,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DOLPHIN.DTO\DOLPHIN.DTO.csproj" />
+    <ProjectReference Include="..\DOLPHIN.Exceptions\DOLPHIN.Exceptions.csproj" />
+    <ProjectReference Include="..\DOLPHIN.Helpers\DOLPHIN.Helpers.csproj" />
+    <ProjectReference Include="..\DOLPHIN.Mapping\DOLPHIN.Mapping.csproj" />
+    <ProjectReference Include="..\DOLPHIN.Model\DOLPHIN.Model.csproj" />
     <ProjectReference Include="..\DOLPHIN.Repository\DOLPHIN.Repository.csproj" />
+    <ProjectReference Include="..\DOLPHIN.Service\DOLPHIN.Service.csproj" />
   </ItemGroup>
 
 
