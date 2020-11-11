@@ -8,6 +8,8 @@ namespace DOLPHIN.Service.Interfaces
 {
     public interface IAddressService
     {
-        Task<AddressViewDto> GetProvinceAsy(string token);
+        Task<List<AddressViewDto>> GetProvince(string token);
+        Task<List<DistrictViewDto>> GetDistrict(string token, int provinceId);
+        Task<List<WardViewDto>> GetWard(string token, int districtId);
     }
 }

@@ -17,7 +17,7 @@ namespace DOLPHIN.WebApi.Modules
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType(typeof(ApplicationDBContext)).As(typeof(IDbContext)).InstancePerLifetimeScope();
-            builder.RegisterType(typeof(UnitOfWorkBase)).As(typeof(IUnitOfWork)).InstancePerLifetimeScope();
+            //builder.RegisterType(typeof(UnitOfWorkBase)).As(typeof(IUnitOfWork)).InstancePerLifetimeScope();
         }
     }
 }

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ozX3xSoYh4pqYAYeNugPRSpmgcwIUNluI7YBD/0goKeFXPT+cP0CyLnCE31cTZ2WNbpNnqugcE+MGfTn12SK7Q==",
+  "dgSpecHash": "EW/OZYY7YDMuU38UuL8+BMIlcVSswBpM/swQcXT9FMVnXpeXhI3lFSbZXEcvZCpqVqNjpR6AujUpww13q4lW0Q==",
   "success": true,
-  "projectFilePath": "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.Helpers\\DOLPHIN.Helpers.csproj",
+  "projectFilePath": "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Helpers\\DOLPHIN.Helpers.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\QN-DEV\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.9\\microsoft.extensions.configuration.abstractions.3.1.9.nupkg.sha512",
-    "C:\\Users\\QN-DEV\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.9\\microsoft.extensions.primitives.3.1.9.nupkg.sha512"
+    "C:\\Users\\h\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.9\\microsoft.extensions.configuration.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\h\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.9\\microsoft.extensions.primitives.3.1.9.nupkg.sha512",
+    "C:\\Users\\h\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
   "logs": []
 }
