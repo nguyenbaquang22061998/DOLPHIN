@@ -67,7 +67,7 @@ namespace DOLPHIN.Service.Services
 
         public async Task<List<WardViewDto>> GetWard(string token, int districtId)
         {
-            var response = await this.callApiGHNHelper.GetDistrict(token, districtId);
+            var response = await this.callApiGHNHelper.GetWard(token, districtId);
             var result = JsonConvert.DeserializeObject<dynamic>(response);
             var wards = new List<WardViewDto>();
 
@@ -82,6 +82,26 @@ namespace DOLPHIN.Service.Services
             }
 
             return wards;
+        }
+
+        public async Task<List<OrderViewDto>> CreateOrder(string token, OrderRequestDto orderRequestDto)
+        {
+            var response = await this.callApiGHNHelper.CreateOrder(token, orderRequestDto);
+            var result = JsonConvert.DeserializeObject<dynamic>(response);
+            var orders = new List<OrderViewDto>();
+
+            foreach (var item in result?.data)
+            {
+                orders.Add(new OrderViewDto
+                {
+                    OrderCode = item.order_code,
+                    SortCode = item.sort_code,
+                    TotalFee = item.total_fee,
+                    ExpectedDeliveryTime = item.expected_delivery_time
+                });
+            }
+
+            return orders;
         }
     }
 }

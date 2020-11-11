@@ -1613,6 +1613,7 @@
       },
       "DOLPHIN.Helpers/1.0.0": {
         "dependencies": {
+          "DOLPHIN.DTO": "1.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "3.1.9",
           "Newtonsoft.Json": "12.0.3"
         },

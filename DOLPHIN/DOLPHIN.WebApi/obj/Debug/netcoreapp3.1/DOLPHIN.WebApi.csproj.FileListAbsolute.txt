@@ -284,3 +284,44 @@ C:\Users\h\Desktop\DAI HOC\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.
 C:\Users\h\Desktop\DAI HOC\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\obj\Debug\netcoreapp3.1\DOLPHIN.WebApi.csproj.CoreCompileInputs.cache
 C:\Users\h\Desktop\DAI HOC\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\obj\Debug\netcoreapp3.1\DOLPHIN.WebApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\h\Desktop\DAI HOC\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\obj\Debug\netcoreapp3.1\DOLPHIN.WebApi.MvcApplicationPartsAssemblyInfo.cache
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.Core.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\System.Linq.Dynamic.Core.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\DOLPHIN.Exceptions.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\DOLPHIN.Helpers.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\DOLPHIN.Mapping.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\DOLPHIN.Service.dll
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.pdb
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\DOLPHIN.Exceptions.pdb
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\DOLPHIN.Helpers.pdb
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\DOLPHIN.Mapping.pdb
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\DOLPHIN.Service.pdb
+D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\obj\Debug\netcoreapp3.1\DOLPHIN.WebApi.MvcApplicationPartsAssemblyInfo.cs
