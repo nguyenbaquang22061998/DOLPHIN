@@ -113,50 +113,24 @@ namespace DOLPHIN.Model.Migrations
 
             modelBuilder.Entity("DOLPHIN.Model.OrderDetails", b =>
                 {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    b.Property<Guid>("CreatedById")
-                        .HasColumnType("char(50)");
-
-                    b.Property<DateTime?>("CreatedDate")
-                        .HasColumnType("datetime(6)");
-
                     b.Property<Guid>("OrderId")
+                        .HasColumnType("char(36)");
+
+                    b.Property<Guid>("ProductId")
                         .HasColumnType("char(36)");
 
                     b.Property<Guid?>("OrdersId")
                         .HasColumnType("char(36)");
 
-                    b.Property<string>("OtherDetail")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<string>("Price")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<Guid>("ProductId")
-                        .HasColumnType("char(36)");
-
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
+                    b.Property<string>("UnitPrice")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<Guid>("UpdatedById")
-                        .HasColumnType("char(50)");
-
-                    b.Property<DateTime?>("UpdatedDate")
-                        .HasColumnType("datetime(6)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CreatedById");
+                    b.HasKey("OrderId", "ProductId");
 
                     b.HasIndex("OrdersId");
-
-                    b.HasIndex("UpdatedById");
 
                     b.ToTable("OrderDetails");
                 });
@@ -223,6 +197,26 @@ namespace DOLPHIN.Model.Migrations
                     b.ToTable("Permissions");
                 });
 
+            modelBuilder.Entity("DOLPHIN.Model.ProductDetail", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)");
+
+                    b.Property<string>("Color")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<Guid>("ProductId")
+                        .HasColumnType("char(36)");
+
+                    b.Property<string>("Size")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProductDetails");
+                });
+
             modelBuilder.Entity("DOLPHIN.Model.Products", b =>
                 {
                     b.Property<Guid>("Id")
@@ -231,9 +225,6 @@ namespace DOLPHIN.Model.Migrations
 
                     b.Property<Guid>("CategoryId")
                         .HasColumnType("char(36)");
-
-                    b.Property<string>("Color")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<Guid>("CreatedById")
                         .HasColumnType("char(50)");
@@ -251,9 +242,6 @@ namespace DOLPHIN.Model.Migrations
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("ProductName")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<string>("Size")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<int>("Status")
@@ -426,21 +414,9 @@ namespace DOLPHIN.Model.Migrations
 
             modelBuilder.Entity("DOLPHIN.Model.OrderDetails", b =>
                 {
-                    b.HasOne("DOLPHIN.Model.Users", "CreatedBy")
-                        .WithMany()
-                        .HasForeignKey("CreatedById")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("DOLPHIN.Model.Orders", null)
                         .WithMany("OrderDetails")
                         .HasForeignKey("OrdersId");
-
-                    b.HasOne("DOLPHIN.Model.Users", "UpdatedBy")
-                        .WithMany()
-                        .HasForeignKey("UpdatedById")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("DOLPHIN.Model.Orders", b =>

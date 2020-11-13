@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using DOLPHIN.Model;
 using Microsoft.AspNetCore.Http;
 using System.IO;
+using Microsoft.AspNetCore.Hosting;
+using DOLPHIN.DTO;
 
 namespace DOLPHIN.Areas.Admin.Controllers
 {
@@ -15,9 +17,14 @@ namespace DOLPHIN.Areas.Admin.Controllers
     public class ProductsController : Controller
     {
         private readonly ApplicationDBContext _context;
-        public ProductsController(ApplicationDBContext context)
+        [Obsolete]
+        private readonly IHostingEnvironment hostingEnvironment;
+
+        [Obsolete]
+        public ProductsController(ApplicationDBContext context, IHostingEnvironment hostingEnviroment)
         {
             _context = context;
+            this.hostingEnvironment = hostingEnviroment;
         }
 
         // GET: Admin/Products
@@ -60,34 +67,33 @@ namespace DOLPHIN.Areas.Admin.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Products products, List<IFormFile> file)
+        [Obsolete]
+        public async Task<IActionResult> Create(ProductViewDto products)
         {
-            Guid userId = new Guid("fb18e1ca-4341-471e-8bba-068d3f73da1b");
+            Guid userId = new Guid("33e23a3f-973a-497f-aa92-5228b04057a3");
             if (ModelState.IsValid)
             {
-                products.Id = Guid.NewGuid();
-                products.CreatedById = userId;
-                products.UpdatedById = userId;
-                products.CreatedDate = DateTime.Now;
-                long size = file.Sum(f => f.Length);
-
                 var filePaths = new List<string>();
-                foreach (var formFile in file)
+                // full path to file in temp location
+                string fileName = products.Images.FileName;
+                var filePath = Path.Combine(hostingEnvironment.WebRootPath, "images");
+                filePaths.Add(filePath);
+                products.Images.CopyTo(new FileStream(filePath, FileMode.Create));
+               
+                Products newProduct = new Products
                 {
-                    if (formFile.Length > 0)
-                    {
-                        // full path to file in temp location
-                        var fileName = Path.GetFileName(formFile.FileName);
-                        var filePath = Path.Combine(Path.GetTempPath(), Path.GetRandomFileName());
-                        filePaths.Add(filePath);
-                        using (var stream = new FileStream(filePath, FileMode.Create))
-                        {
-                            await formFile.CopyToAsync(stream);
-                        }
-                        products.Images = fileName;
-                    }
-                }
-                _context.Add(products);
+                    Id = Guid.NewGuid(),
+                    CreatedById = userId,
+                    UpdatedById = userId,
+                    CreatedDate = DateTime.Now,
+                    ProductName = products.ProductName,
+                    CategoryId = products.CategoryId,
+                    Price = products.Price,
+                    Desciption = products.Desciption,
+                    Status = products.Status,
+                    Images = fileName
+                };
+                _context.Add(newProduct);
                 await _context.SaveChangesAsync();
                 return Redirect("/Admin/Products/Index");
             }

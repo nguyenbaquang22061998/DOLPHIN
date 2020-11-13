@@ -1,25 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
+using System.Text.Json.Serialization;
 
 namespace DOLPHIN.Model
 {
-    public class OrderDetails : AuditableEntity
+    public class OrderDetails : BaseEntity
     {
-        [Key]
-        public long Id { get; set; }
-
+        [ForeignKey("OrderId")]
+        [JsonIgnore]
         public Guid OrderId { get; set; }
 
+        [ForeignKey("ProductId")]
+        [JsonIgnore]
         public Guid ProductId { get; set; }
-
-        public int Status { get; set; }
 
         public int Quantity { get; set; }
 
-        public string Price { get; set; }
-
-        public string OtherDetail { get; set; }
+        public string UnitPrice { get; set; }
     }
 }

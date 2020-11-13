@@ -26,6 +26,7 @@ namespace DOLPHIN.Model
         public virtual DbSet<RolePermission> RolePermissions { get; set; }
         public virtual DbSet<Users> Users { get; set; }
         public virtual DbSet<RoleUser> RoleUsers { get; set; }
+        public virtual DbSet<ProductDetail> ProductDetails { get; set; }
         protected IConfiguration Configs { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -52,6 +53,8 @@ namespace DOLPHIN.Model
         {
             modelBuilder.Entity<RoleUser>()
                 .HasKey(c => new { c.RoleId, c.UserId });
+            modelBuilder.Entity<OrderDetails>()
+                .HasKey(c => new { c.OrderId, c.ProductId });
             modelBuilder.Entity<RolePermission>()
                 .HasKey(c => new { c.RoleId, c.PermissionId });
             modelBuilder.Entity<Comments>()

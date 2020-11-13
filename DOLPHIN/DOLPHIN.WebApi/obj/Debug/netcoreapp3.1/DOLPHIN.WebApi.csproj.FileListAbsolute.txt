@@ -325,3 +325,5 @@ D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\DOLP
 D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\DOLPHIN.Mapping.pdb
 D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\DOLPHIN.Service.pdb
 D:\Đồ án - QUANG\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\obj\Debug\netcoreapp3.1\DOLPHIN.WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\h\Desktop\DAI HOC\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\h\Desktop\DAI HOC\DOLPHIN\DOLPHIN\DOLPHIN.WebApi\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll

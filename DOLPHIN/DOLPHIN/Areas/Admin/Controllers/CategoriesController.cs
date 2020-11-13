@@ -61,7 +61,7 @@ namespace DOLPHIN.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Categories categories)
         {
-            Guid userId = new Guid("fb18e1ca-4341-471e-8bba-068d3f73da1b");
+            Guid userId = new Guid("33e23a3f-973a-497f-aa92-5228b04057a3");
             if (ModelState.IsValid)
             {
                 categories.Id = Guid.NewGuid();

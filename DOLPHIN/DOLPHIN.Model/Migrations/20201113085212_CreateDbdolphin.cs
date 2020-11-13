@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DOLPHIN.Model.Migrations
 {
-    public partial class CreateDB : Migration
+    public partial class CreateDbdolphin : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -20,6 +20,20 @@ namespace DOLPHIN.Model.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Permissions", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ProductDetails",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(nullable: false),
+                    ProductId = table.Column<Guid>(nullable: false),
+                    Size = table.Column<string>(nullable: true),
+                    Color = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ProductDetails", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -142,10 +156,10 @@ namespace DOLPHIN.Model.Migrations
                     UpdatedById = table.Column<Guid>(nullable: false),
                     CreatedDate = table.Column<DateTime>(nullable: true),
                     CreatedById = table.Column<Guid>(nullable: false),
-                    ProductName = table.Column<string>(nullable: false),
+                    CategoryId = table.Column<Guid>(nullable: false),
+                    ProductName = table.Column<string>(nullable: true),
                     Price = table.Column<string>(nullable: true),
-                    Color = table.Column<string>(nullable: true),
-                    Size = table.Column<string>(nullable: true),
+                    Images = table.Column<string>(nullable: true),
                     Desciption = table.Column<string>(nullable: true),
                     Status = table.Column<int>(nullable: false)
                 },
@@ -199,41 +213,21 @@ namespace DOLPHIN.Model.Migrations
                 name: "OrderDetails",
                 columns: table => new
                 {
-                    Id = table.Column<long>(nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    UpdatedDate = table.Column<DateTime>(nullable: true),
-                    UpdatedById = table.Column<Guid>(nullable: false),
-                    CreatedDate = table.Column<DateTime>(nullable: true),
-                    CreatedById = table.Column<Guid>(nullable: false),
                     OrderId = table.Column<Guid>(nullable: false),
                     ProductId = table.Column<Guid>(nullable: false),
-                    Status = table.Column<int>(nullable: false),
                     Quantity = table.Column<int>(nullable: false),
-                    Price = table.Column<string>(nullable: true),
-                    OtherDetail = table.Column<string>(nullable: true),
+                    UnitPrice = table.Column<string>(nullable: true),
                     OrdersId = table.Column<Guid>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_OrderDetails", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_OrderDetails_Users_CreatedById",
-                        column: x => x.CreatedById,
-                        principalTable: "Users",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                    table.PrimaryKey("PK_OrderDetails", x => new { x.OrderId, x.ProductId });
                     table.ForeignKey(
                         name: "FK_OrderDetails_Orders_OrdersId",
                         column: x => x.OrdersId,
                         principalTable: "Orders",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_OrderDetails_Users_UpdatedById",
-                        column: x => x.UpdatedById,
-                        principalTable: "Users",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -336,19 +330,9 @@ namespace DOLPHIN.Model.Migrations
                 column: "UpdatedById");
 
             migrationBuilder.CreateIndex(
-                name: "IX_OrderDetails_CreatedById",
-                table: "OrderDetails",
-                column: "CreatedById");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_OrderDetails_OrdersId",
                 table: "OrderDetails",
                 column: "OrdersId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_OrderDetails_UpdatedById",
-                table: "OrderDetails",
-                column: "UpdatedById");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Orders_CreatedById",
@@ -416,6 +400,9 @@ namespace DOLPHIN.Model.Migrations
 
             migrationBuilder.DropTable(
                 name: "OrderDetails");
+
+            migrationBuilder.DropTable(
+                name: "ProductDetails");
 
             migrationBuilder.DropTable(
                 name: "RolePermissions");
