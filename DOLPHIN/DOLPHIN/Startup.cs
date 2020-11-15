@@ -45,6 +45,9 @@ namespace DOLPHIN
             services.AddDbContext<ApplicationDBContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("VSECConnection")));
             services.AddControllersWithViews(options => options.EnableEndpointRouting = false);
+            services.AddSession(options => {
+                options.IdleTimeout = TimeSpan.FromMinutes(30);
+            });
 
             var builder = new ContainerBuilder();
             builder.Populate(services);
@@ -77,6 +80,8 @@ namespace DOLPHIN
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseSession();
+
 
             app.UseMvc(routes =>
             {

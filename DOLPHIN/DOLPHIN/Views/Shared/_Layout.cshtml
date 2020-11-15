@@ -1,4 +1,28 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http;
+@using Newtonsoft.Json;
+@using DOLPHIN.Model
+@{
+    var data = Context.Session.GetString("cart");
+
+    int coutCart = 0;
+    if (data == null)
+    {
+        coutCart = 0;
+    }
+    else
+    {
+        var data2 = Context.Session.GetString("cart");
+        List<CartItem> dataCart = JsonConvert.DeserializeObject<List<CartItem>>(data2);
+        foreach (var item in dataCart)
+        {
+            coutCart += item.Quantity;
+        }
+
+    }
+
+}
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,7 +30,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Trang chủ | Thời trang DOLPHIN</title>
+    <title>Thời trang DOLPHIN</title>
     <link href="~/css/bootstrap.min.css" rel="stylesheet">
     <link href="~/css/font-awesome.min.css" rel="stylesheet">
     <link href="~/css/prettyPhoto.css" rel="stylesheet">

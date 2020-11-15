@@ -861,10 +861,10 @@ h2.title {
   right: 0;
 }
 
-.productinfo h2{
-	color: #FE980F;
+.productinfo h2 {
+	color: #dc0606;
 	font-family: 'Roboto', sans-serif;
-	font-size: 24px;
+	font-size: 15px;
 	font-weight: 700;
 }
 .product-overlay h2{
@@ -1752,7 +1752,23 @@ h2.title {
 
 .user_info > li > span {
 }
+.form-one input {
+	background: #F0F0E9;
+	border: 0 none;
+	margin-bottom: 10px;
+	padding: 10px;
+	width: 100%;
+	font-weight: 300;
+}
 
+.form-two input, select {
+	background: #F0F0E9;
+	border: 0 none;
+	margin-bottom: 10px;
+	padding: 10px;
+	width: 100%;
+	font-weight: 300;
+}
 .user_info input, select, textarea {
   background: #F0F0E9;
   border:0;

@@ -6,26 +6,30 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using DOLPHIN.Models;
+using DOLPHIN.Model;
 
 namespace DOLPHIN.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly ApplicationDBContext _context;
+        public HomeController(ILogger<HomeController> logger, ApplicationDBContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var listProductHot = _context.Products.Take(6).ToList();
+            return View(listProductHot);
         }
 
-        public IActionResult Details()
+        public IActionResult Details(Guid id)
         {
-            return View();
+            var product = _context.Products.Where(x => x.Id == id).FirstOrDefault();
+            return View(product);
         }
         public IActionResult Shop()
         {

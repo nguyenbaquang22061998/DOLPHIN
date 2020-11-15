@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -160,60 +159,22 @@
                     <!--product-details-->
                     <div class="col-sm-5">
                         <div class="view-product">
-                            <img src="~/images/product-details/1.jpg" alt="" />
-                            <h3>ZOOM</h3>
+                            <img src="~/images/@Model.Images" alt="" />
                         </div>
-                        <div id="similar-product" class="carousel slide" data-ride="carousel">
-
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <a href=""><img src="~/images/product-details/similar1.jpg" alt=""></a>
-                                    <a href=""><img src="~/images/product-details/similar2.jpg" alt=""></a>
-                                    <a href=""><img src="~/images/product-details/similar3.jpg" alt=""></a>
-                                </div>
-                                <div class="item">
-                                    <a href=""><img src="~/images/product-details/similar1.jpg" alt=""></a>
-                                    <a href=""><img src="~/images/product-details/similar2.jpg" alt=""></a>
-                                    <a href=""><img src="~/images/product-details/similar3.jpg" alt=""></a>
-                                </div>
-                                <div class="item">
-                                    <a href=""><img src="~/images/product-details/similar1.jpg" alt=""></a>
-                                    <a href=""><img src="~/images/product-details/similar2.jpg" alt=""></a>
-                                    <a href=""><img src="~/images/product-details/similar3.jpg" alt=""></a>
-                                </div>
-
-                            </div>
-
-                            <!-- Controls -->
-                            <a class="left item-control" href="#similar-product" data-slide="prev">
-                                <i class="fa fa-angle-left"></i>
-                            </a>
-                            <a class="right item-control" href="#similar-product" data-slide="next">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-                        </div>
-
                     </div>
                     <div class="col-sm-7">
                         <div class="product-information">
                             <!--/product-information-->
-                            <img src="~/images/product-details/new.jpg" class="newarrival" alt="" />
-                            <h2>Anne Klein Sleeveless Colorblock Scuba</h2>
-                            <p>Web ID: 1089772</p>
-                            <img src="~/images/product-details/rating.png" alt="" />
+                            <h2>@Model.ProductName</h2>
                             <span>
-                                <span>US $59</span>
-                                <label>Quantity:</label>
-                                <input type="text" value="3" />
-                                <button type="button" class="btn btn-fefault cart">
-                                    <i class="fa fa-shopping-cart"></i>
-                                    Add to cart
-                                </button>
+                                <span>@string.Format("{0:##,#}", Model.Price) đ</span>
                             </span>
-                            <p><b>Availability:</b> In Stock</p>
-                            <p><b>Condition:</b> New</p>
-                            <p><b>Brand:</b> E-SHOPPER</p>
+                            <p><b>Tình trạng:</b> Còn hàng</p>
+                            <p><b>Thương hiệu:</b> DOLPHIN Clothing</p>
+                            <a href="/Cart/AddCart/@Model.Id" class="btn btn-default add-to-cart">
+                                <i class="fa fa-shopping-cart"></i>Đặt hàng
+                            </a>
+                            @*<a asp-controller="Cart" asp-action="AddCart" asp-route-id="@Model.Id" class="class="btn btn-default add-to-cart"">Add order</a>*@
                             <a href="">
                                 <img src="~/images/product-details/share.png" class="share img-responsive"
                                      alt="" />
@@ -228,10 +189,8 @@
                     <!--category-tab-->
                     <div class="col-sm-12">
                         <ul class="nav nav-tabs">
-                            <li><a href="#details" data-toggle="tab">Details</a></li>
-                            <li><a href="#companyprofile" data-toggle="tab">Company Profile</a></li>
-                            <li><a href="#tag" data-toggle="tab">Tag</a></li>
-                            <li class="active"><a href="#reviews" data-toggle="tab">Reviews (5)</a></li>
+                            <li><a href="#details" data-toggle="tab">Sản phẩm tương tự</a></li>
+                            <li class="active"><a href="#reviews" data-toggle="tab">Đánh giá</a></li>
                         </ul>
                     </div>
                     <div class="tab-content">

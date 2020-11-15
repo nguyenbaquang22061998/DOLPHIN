@@ -70,13 +70,15 @@ namespace DOLPHIN.Areas.Admin.Controllers
         [Obsolete]
         public async Task<IActionResult> Create(ProductViewDto products)
         {
-            Guid userId = new Guid("33e23a3f-973a-497f-aa92-5228b04057a3");
+            Guid userId = new Guid("85913f7d-7e38-4782-8df1-00122229d04f");
+            string fileName = null;
             if (ModelState.IsValid)
             {
                 var filePaths = new List<string>();
                 // full path to file in temp location
-                string fileName = products.Images.FileName;
-                var filePath = Path.Combine(hostingEnvironment.WebRootPath, "images");
+                fileName = Guid.NewGuid().ToString() + "_" + products.Images.FileName;
+                string uploadFolder = Path.Combine(hostingEnvironment.WebRootPath, "images");
+                string filePath = Path.Combine(uploadFolder, fileName);
                 filePaths.Add(filePath);
                 products.Images.CopyTo(new FileStream(filePath, FileMode.Create));
                

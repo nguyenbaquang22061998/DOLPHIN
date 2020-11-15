@@ -22,12 +22,6 @@
                         Giá
                     </th>
                     <th class="text-center">
-                        Màu sắc
-                    </th>
-                    <th class="text-center">
-                        Size
-                    </th>
-                    <th class="text-center">
                         Mô tả
                     </th>
                     <th class="text-center">
@@ -69,7 +63,14 @@
                         </div>
                     </td>
                     <td class="text-center">
-                        @Html.DisplayFor(modelItem => item.Status)
+                        @if (item.Status == 0)
+                        {
+                            <p>Active</p>
+                        }
+                        @if (item.Status == -1)
+                        {
+                            <p>InActive</p>
+                        }
                     </td>
                     <td class="text-center">
                         @Html.DisplayFor(modelItem => item.CreatedDate)
