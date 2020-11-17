@@ -1,25 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj": {}
+    "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj": {}
   },
   "projects": {
-    "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj": {
+    "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj",
+        "projectUniqueName": "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj",
         "projectName": "DOLPHIN.Model",
-        "projectPath": "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj",
-        "packagesPath": "C:\\Users\\QN-DEV\\.nuget\\packages\\",
-        "outputPath": "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\obj\\",
+        "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj",
+        "packagesPath": "C:\\Users\\h\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\QN-DEV\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\h\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -90,22 +89,21 @@
         }
       }
     },
-    "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj": {
+    "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj",
         "projectName": "DOLPHIN.Repository",
-        "projectPath": "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj",
-        "packagesPath": "C:\\Users\\QN-DEV\\.nuget\\packages\\",
-        "outputPath": "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.Repository\\obj\\",
+        "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj",
+        "packagesPath": "C:\\Users\\h\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\QN-DEV\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\h\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -117,8 +115,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj": {
-                "projectPath": "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj"
+              "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj": {
+                "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj"
               }
             }
           }
