@@ -95,6 +95,7 @@ namespace DOLPHIN.Service.Services
                 orders.Add(new OrderViewDto
                 {
                     OrderCode = item.order_code,
+                    ClientOrderCode = orderRequestDto.CliendOrderCode,
                     SortCode = item.sort_code,
                     TotalFee = item.total_fee,
                     ExpectedDeliveryTime = item.expected_delivery_time
@@ -102,6 +103,23 @@ namespace DOLPHIN.Service.Services
             }
 
             return orders;
+        }
+
+        public async Task<List<TrackingOrderViewDto>> TrackingOrders(string orderCode)
+        {
+            var response = await this.callApiGHNHelper.TrackingOrders(orderCode);
+            var result = JsonConvert.DeserializeObject<dynamic>(response);
+            var trackingOrders = new List<TrackingOrderViewDto>();
+
+            foreach (var item in result?.data)
+            {
+                trackingOrders.Add(new TrackingOrderViewDto
+                {
+                    Status = item.status
+                });
+            }
+
+            return trackingOrders;
         }
     }
 }

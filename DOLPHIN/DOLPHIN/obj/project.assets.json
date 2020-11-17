@@ -9760,25 +9760,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\QN-DEV\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\h\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN\\DOLPHIN.csproj",
+      "projectUniqueName": "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN\\DOLPHIN.csproj",
       "projectName": "DOLPHIN",
-      "projectPath": "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN\\DOLPHIN.csproj",
-      "packagesPath": "C:\\Users\\QN-DEV\\.nuget\\packages\\",
-      "outputPath": "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN\\obj\\",
+      "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN\\DOLPHIN.csproj",
+      "packagesPath": "C:\\Users\\h\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\QN-DEV\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\h\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -9790,29 +9789,29 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.DTO\\DOLPHIN.DTO.csproj": {
-              "projectPath": "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.DTO\\DOLPHIN.DTO.csproj"
+            "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.DTO\\DOLPHIN.DTO.csproj": {
+              "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.DTO\\DOLPHIN.DTO.csproj"
             },
-            "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.Exceptions\\DOLPHIN.Exceptions.csproj": {
-              "projectPath": "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.Exceptions\\DOLPHIN.Exceptions.csproj"
+            "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Exceptions\\DOLPHIN.Exceptions.csproj": {
+              "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Exceptions\\DOLPHIN.Exceptions.csproj"
             },
-            "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.Helpers\\DOLPHIN.Helpers.csproj": {
-              "projectPath": "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.Helpers\\DOLPHIN.Helpers.csproj"
+            "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Helpers\\DOLPHIN.Helpers.csproj": {
+              "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Helpers\\DOLPHIN.Helpers.csproj"
             },
-            "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.Mapping\\DOLPHIN.Mapping.csproj": {
-              "projectPath": "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.Mapping\\DOLPHIN.Mapping.csproj"
+            "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Mapping\\DOLPHIN.Mapping.csproj": {
+              "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Mapping\\DOLPHIN.Mapping.csproj"
             },
-            "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj": {
-              "projectPath": "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj"
+            "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj": {
+              "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Model\\DOLPHIN.Model.csproj"
             },
-            "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj": {
-              "projectPath": "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj"
+            "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj": {
+              "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Repository\\DOLPHIN.Repository.csproj"
             },
-            "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.Service\\DOLPHIN.Service.csproj": {
-              "projectPath": "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.Service\\DOLPHIN.Service.csproj"
+            "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Service\\DOLPHIN.Service.csproj": {
+              "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Service\\DOLPHIN.Service.csproj"
             },
-            "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.WebApi\\DOLPHIN.WebApi.csproj": {
-              "projectPath": "D:\\Đồ án - QUANG\\DOLPHIN\\DOLPHIN\\DOLPHIN.WebApi\\DOLPHIN.WebApi.csproj"
+            "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.WebApi\\DOLPHIN.WebApi.csproj": {
+              "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.WebApi\\DOLPHIN.WebApi.csproj"
             }
           }
         }

@@ -94,6 +94,7 @@ namespace DOLPHIN.Helpers.Helpers
                 shop_id = 75661,
                 payment_type_id = 2,
                 note = "",
+                client_order_code = orderRequestDto.CliendOrderCode,
                 required_note = "KHONGCHOXEMHANG",
                 return_phone = "0368345905",
                 return_address = "124 Ngô Quyền, Quang Trung, Hà Đông, Hà Nội",
@@ -106,6 +107,8 @@ namespace DOLPHIN.Helpers.Helpers
                 to_district_id = orderRequestDto.DistrictId,
                 cod_amount = orderRequestDto.CodAmount,
                 content = orderRequestDto.Content,
+                service_id =53321,
+                service_type_id = 2,
                 weight = 500,
                 length = 50,
                 width = 50,
@@ -122,7 +125,7 @@ namespace DOLPHIN.Helpers.Helpers
             var json = JsonConvert.SerializeObject(notiRequest);
             var data = new StringContent(json, Encoding.UTF8, "application/json");
             using var client = new HttpClient();
-            client.BaseAddress = new Uri(ghnUrl);
+            client.BaseAddress = new Uri("https://dev-online-gateway.ghn.vn/");
 
             // Add an Accept header for JSON format.
             client.DefaultRequestHeaders.Accept.Add(
@@ -137,6 +140,53 @@ namespace DOLPHIN.Helpers.Helpers
             return result;
         }
 
+        public async Task<string> TrackingOrders(string orderCode)
+        {
+            var notiRequest = new
+            {
+                order_code = orderCode
+            };
+            var json = JsonConvert.SerializeObject(notiRequest);
+            var data = new StringContent(json, Encoding.UTF8, "application/json");
+            using var client = new HttpClient();
+            client.BaseAddress = new Uri(ghnUrl);
+
+            // Add an Accept header for JSON format.
+            client.DefaultRequestHeaders.Accept.Add(
+            new MediaTypeWithQualityHeaderValue("application/json"));
+            client.DefaultRequestHeaders.Add("token", "98bb7369-1162-11eb-a23c-065c95c021cb");
+            client.DefaultRequestHeaders.Add("ShopId", "75661");
+
+            // List data response.
+            var response = await client.PostAsync("/shiip/public-api/v2/shipping-order/detail", data);
+            var result = await response.Content.ReadAsStringAsync();
+
+            return result;
+        }
+
+        public async Task<string> TrackingOrdersByClient(string clientOrderCode)
+        {
+            var notiRequest = new
+            {
+                client_order_code = clientOrderCode
+            };
+            var json = JsonConvert.SerializeObject(notiRequest);
+            var data = new StringContent(json, Encoding.UTF8, "application/json");
+            using var client = new HttpClient();
+            client.BaseAddress = new Uri(ghnUrl);
+
+            // Add an Accept header for JSON format.
+            client.DefaultRequestHeaders.Accept.Add(
+            new MediaTypeWithQualityHeaderValue("application/json"));
+            client.DefaultRequestHeaders.Add("token", "98bb7369-1162-11eb-a23c-065c95c021cb");
+            client.DefaultRequestHeaders.Add("ShopId", "75661");
+
+            // List data response.
+            var response = await client.PostAsync("/shiip/public-api/v2/shipping-order/detail-by-client-code", data);
+            var result = await response.Content.ReadAsStringAsync();
+
+            return result;
+        }
         private async Task<StringContent> CreateRequest(int provinceId)
         {
             var notiRequest = new

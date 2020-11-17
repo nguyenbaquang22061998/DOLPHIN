@@ -55,22 +55,39 @@ namespace DOLPHIN.Controllers
 
         public async Task<IActionResult> Payment(OrderRequestDto orderRequestDto)
         {
+            // Call Api GHN Create Order.
+            var cart = HttpContext.Session.GetString("cart");//get key cart
+            List<CartItem> dataCart = JsonConvert.DeserializeObject<List<CartItem>>(cart);
+            string token = "98bb7369-1162-11eb-a23c-065c95c021cb";
+            orderRequestDto.WardCode = "1A0314";
+            orderRequestDto.DistrictId = 1488;
+            orderRequestDto.CliendOrderCode = Guid.NewGuid().ToString();
+            var newItems = new ItemsDto();
+            foreach (var item in dataCart)
+            {
+                newItems.Code = item.Products.Id.ToString();
+                newItems.Name = item.Products.ProductName;
+                newItems.Quantity = item.Quantity;
+            }
+            orderRequestDto.Items = newItems;
+            var result =  await this.addressService.CreateOrder(token, orderRequestDto);
+
+            // Create Order DB
             var newOrder = new Orders()
             {
                 Id = Guid.NewGuid(),
                 Address = orderRequestDto.Address,
                 Phone = orderRequestDto.Phone,
-                CreatedById = new Guid("85913f7d-7e38-4782-8df1-00122229d04f"),
-                UpdatedById = new Guid("85913f7d-7e38-4782-8df1-00122229d04f"),
-
-                UserId = "85913f7d-7e38-4782-8df1-00122229d04f"
+                CreatedById = new Guid("33e23a3f-973a-497f-aa92-5228b04057a3"),
+                UpdatedById = new Guid("33e23a3f-973a-497f-aa92-5228b04057a3"),
+                GHNRef = orderRequestDto.CliendOrderCode,
+                UserId = "33e23a3f-973a-497f-aa92-5228b04057a3"
 
             };
             _context.Add(newOrder);
             _ = await _context.SaveChangesAsync();
 
-            var cart = HttpContext.Session.GetString("cart");//get key cart
-            List<CartItem> dataCart = JsonConvert.DeserializeObject<List<CartItem>>(cart);
+            // Create OrderDetail DB.
             var orderDetail = new OrderDetails();
             foreach (var item in dataCart)
             {
@@ -81,9 +98,6 @@ namespace DOLPHIN.Controllers
             }
             _context.Add(orderDetail);
             _ = await _context.SaveChangesAsync();
-
-            string token = "98bb7369-1162-11eb-a23c-065c95c021cb";
-            var result =  await this.addressService.CreateOrder(token, orderRequestDto);
 
             return View();
         }
