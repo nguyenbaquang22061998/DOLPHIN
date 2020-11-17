@@ -73,3 +73,18 @@ C:\Users\h\Desktop\DAI HOC\DOLPHIN\DOLPHIN\DOLPHIN.Repository\obj\Debug\netcorea
 C:\Users\h\Desktop\DAI HOC\DOLPHIN\DOLPHIN\DOLPHIN.Repository\obj\Debug\netcoreapp3.1\DOLPHIN.Repository.dll
 C:\Users\h\Desktop\DAI HOC\DOLPHIN\DOLPHIN\DOLPHIN.Repository\obj\Debug\netcoreapp3.1\DOLPHIN.Repository.pdb
 C:\Users\h\Desktop\DAI HOC\DOLPHIN\DOLPHIN\DOLPHIN.Repository\obj\Debug\netcoreapp3.1\DOLPHIN.Repository.genruntimeconfig.cache
+D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Repository\bin\Debug\netcoreapp3.1\DOLPHIN.Repository.deps.json
+D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Repository\bin\Debug\netcoreapp3.1\DOLPHIN.Repository.runtimeconfig.json
+D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Repository\bin\Debug\netcoreapp3.1\DOLPHIN.Repository.runtimeconfig.dev.json
+D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Repository\bin\Debug\netcoreapp3.1\DOLPHIN.Repository.dll
+D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Repository\bin\Debug\netcoreapp3.1\DOLPHIN.Repository.pdb
+D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Repository\bin\Debug\netcoreapp3.1\DOLPHIN.Model.dll
+D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Repository\bin\Debug\netcoreapp3.1\DOLPHIN.Model.pdb
+D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Repository\obj\Debug\netcoreapp3.1\DOLPHIN.Repository.csprojAssemblyReference.cache
+D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Repository\obj\Debug\netcoreapp3.1\DOLPHIN.Repository.AssemblyInfoInputs.cache
+D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Repository\obj\Debug\netcoreapp3.1\DOLPHIN.Repository.AssemblyInfo.cs
+D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Repository\obj\Debug\netcoreapp3.1\DOLPHIN.Repository.csproj.CoreCompileInputs.cache
+D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Repository\obj\Debug\netcoreapp3.1\DOLPHIN.Repository.csproj.CopyComplete
+D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Repository\obj\Debug\netcoreapp3.1\DOLPHIN.Repository.dll
+D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Repository\obj\Debug\netcoreapp3.1\DOLPHIN.Repository.pdb
+D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Repository\obj\Debug\netcoreapp3.1\DOLPHIN.Repository.genruntimeconfig.cache

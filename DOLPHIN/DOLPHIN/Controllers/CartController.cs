@@ -99,7 +99,7 @@ namespace DOLPHIN.Controllers
             _context.Add(orderDetail);
             _ = await _context.SaveChangesAsync();
 
-            return View();
+            return View(newOrder);
         }
         public Products GetDetails(Guid id)
         {

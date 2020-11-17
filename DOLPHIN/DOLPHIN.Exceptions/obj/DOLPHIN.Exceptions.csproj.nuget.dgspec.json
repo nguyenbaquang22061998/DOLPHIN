@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Exceptions\\DOLPHIN.Exceptions.csproj": {}
+    "D:\\Đồ án - QUANG\\DOLPHIN_v2_last_update\\DOLPHIN\\DOLPHIN\\DOLPHIN.Exceptions\\DOLPHIN.Exceptions.csproj": {}
   },
   "projects": {
-    "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Exceptions\\DOLPHIN.Exceptions.csproj": {
+    "D:\\Đồ án - QUANG\\DOLPHIN_v2_last_update\\DOLPHIN\\DOLPHIN\\DOLPHIN.Exceptions\\DOLPHIN.Exceptions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Exceptions\\DOLPHIN.Exceptions.csproj",
+        "projectUniqueName": "D:\\Đồ án - QUANG\\DOLPHIN_v2_last_update\\DOLPHIN\\DOLPHIN\\DOLPHIN.Exceptions\\DOLPHIN.Exceptions.csproj",
         "projectName": "DOLPHIN.Exceptions",
-        "projectPath": "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Exceptions\\DOLPHIN.Exceptions.csproj",
-        "packagesPath": "C:\\Users\\h\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\h\\Desktop\\DAI HOC\\DOLPHIN\\DOLPHIN\\DOLPHIN.Exceptions\\obj\\",
+        "projectPath": "D:\\Đồ án - QUANG\\DOLPHIN_v2_last_update\\DOLPHIN\\DOLPHIN\\DOLPHIN.Exceptions\\DOLPHIN.Exceptions.csproj",
+        "packagesPath": "C:\\Users\\QN-DEV\\.nuget\\packages\\",
+        "outputPath": "D:\\Đồ án - QUANG\\DOLPHIN_v2_last_update\\DOLPHIN\\DOLPHIN\\DOLPHIN.Exceptions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\h\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\QN-DEV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
