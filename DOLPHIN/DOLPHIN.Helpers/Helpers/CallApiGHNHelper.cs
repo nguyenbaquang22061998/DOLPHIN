@@ -91,7 +91,9 @@ namespace DOLPHIN.Helpers.Helpers
         {
             var notiRequest = new
             {
+                shop_id = 75661,
                 payment_type_id = 2,
+                note = "",
                 required_note = "KHONGCHOXEMHANG",
                 return_phone = "0368345905",
                 return_address = "124 Ngô Quyền, Quang Trung, Hà Đông, Hà Nội",
@@ -108,12 +110,13 @@ namespace DOLPHIN.Helpers.Helpers
                 length = 50,
                 width = 50,
                 height = 15,
-                
-                items = new  
-                {
-                    name = orderRequestDto.Items.Name,
-                    code = orderRequestDto.Items.Code,
-                    quantity = orderRequestDto.Items.Quantity
+                source = "5sao",
+                items = new[] {
+                    new {
+                        name = orderRequestDto.Items.Name,
+                        code = orderRequestDto.Items.Code,
+                        quantity = orderRequestDto.Items.Quantity
+                    }
                 }
             };
             var json = JsonConvert.SerializeObject(notiRequest);
