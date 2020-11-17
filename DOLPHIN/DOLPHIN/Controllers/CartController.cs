@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using DOLPHIN.Models;
 using DOLPHIN.Model;
 using Microsoft.AspNetCore.Http;
-using Newtonsoft.Json;
 using DOLPHIN.DTO;
+using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 
 namespace DOLPHIN.Controllers
 {
@@ -50,8 +48,20 @@ namespace DOLPHIN.Controllers
             //return View();
         }
 
-        public IActionResult Payment(OrderRequestDto orderRequestDto)
+        public async Task<IActionResult> Payment(OrderRequestDto orderRequestDto)
         {
+            var newOrder = new Orders()
+            {
+                Id = Guid.NewGuid(),
+                Address = orderRequestDto.Address,
+                Phone = orderRequestDto.Phone,
+                CreatedById = new Guid("33e23a3f-973a-497f-aa92-5228b04057a3"),
+                UpdatedById = new Guid("33e23a3f-973a-497f-aa92-5228b04057a3"),
+                UserId = "33e23a3f-973a-497f-aa92-5228b04057a3"
+
+            };
+            _context.Add(newOrder);
+            _ = await _context.SaveChangesAsync();
             return View();
         }
         public Products GetDetails(Guid id)
