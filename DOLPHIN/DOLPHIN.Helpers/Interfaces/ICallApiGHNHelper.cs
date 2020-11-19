@@ -14,5 +14,6 @@ namespace DOLPHIN.Helpers.Interfaces
         Task<string> GetWard(string token, int districtId);
         Task<string> CreateOrder(string token, OrderRequestDto orderRequestDto);
         Task<string> TrackingOrders(string orderCode);
+        Task<string> TrackingOrdersByClient(string clientOrderCode);
     }
 }

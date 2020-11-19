@@ -111,7 +111,7 @@ namespace DOLPHIN.Service.Services
 
         public async Task<List<TrackingOrderViewDto>> TrackingOrders(string orderCode)
         {
-            var response = await this.callApiGHNHelper.TrackingOrders(orderCode);
+            var response = await this.callApiGHNHelper.TrackingOrdersByClient(orderCode);
             var result = JsonConvert.DeserializeObject<dynamic>(response);
             var trackingOrders = new List<TrackingOrderViewDto>();
 

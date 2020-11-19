@@ -12,5 +12,6 @@ namespace DOLPHIN.Service.Interfaces
         Task<List<DistrictViewDto>> GetDistrict(string token, int provinceId);
         Task<List<WardViewDto>> GetWard(string token, int districtId);
         Task<List<OrderViewDto>> CreateOrder(string token, OrderRequestDto orderRequestDto);
+        Task<List<TrackingOrderViewDto>> TrackingOrders(string orderCode);
     }
 }

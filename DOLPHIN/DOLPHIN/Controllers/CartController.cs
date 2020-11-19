@@ -101,7 +101,22 @@ namespace DOLPHIN.Controllers
 
             return View(newOrder);
         }
-        public Products GetDetails(Guid id)
+
+        public async Task<IActionResult> CheckingOrderByClient(string orderCode)
+        {
+            if (string.IsNullOrWhiteSpace(orderCode))
+            {
+                return View();
+            }
+            var orders = _context.Orders.Where(x => x.GHNRef == orderCode).FirstOrDefault();
+            if (orders != null)
+            {
+                var orderInfo = await this.addressService.TrackingOrders(orderCode);
+                return View(orderInfo);
+            }
+            return View("404");
+        }
+            public Products GetDetails(Guid id)
         {
             var product = _context.Products.Find(id);
             return product;

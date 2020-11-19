@@ -1251,3 +1251,5 @@ D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN\obj\Debug\ne
 D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN\obj\Debug\netcoreapp3.1\DOLPHIN.dll
 D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN\obj\Debug\netcoreapp3.1\DOLPHIN.pdb
 D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN\obj\Debug\netcoreapp3.1\DOLPHIN.genruntimeconfig.cache
+D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN\obj\Debug\netcoreapp3.1\Razor\Views\Cart\CheckingOrderByClient.cshtml.g.cs
+D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN\obj\Debug\netcoreapp3.1\Razor\Views\Cart\404.cshtml.g.cs
