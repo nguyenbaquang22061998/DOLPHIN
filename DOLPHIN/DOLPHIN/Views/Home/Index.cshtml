@@ -226,19 +226,13 @@
                             <div class="product-image-wrapper">
                                 <div class="single-products">
                                     <div class="productinfo text-center">
-                                        <img src="~/images/@item.Images" alt="" />
+                                        <a href="/Home/Details/@item.Id"><img src="~/images/@item.Images" alt="" /></a>
                                         <p>@item.ProductName</p>
                                         <h2>@string.Format("{0:##,#}", item.Price) đ</h2>
                                         <a href="/Home/Details/@item.Id" class="btn btn-default add-to-cart">
                                             <i class="fa fa-shopping-cart"></i>Thêm vào giỏ
                                         </a>
                                     </div>
-                                </div>
-                                <div class="choose">
-                                    <ul class="nav nav-pills nav-justified">
-                                        <li><a href="#"><i class="fa fa-plus-square"></i>Yêu thích</a></li>
-                                        <li><a href="#"><i class="fa fa-plus-square"></i>So sánh</a></li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
