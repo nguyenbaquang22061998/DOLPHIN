@@ -71,7 +71,6 @@ D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Model\bin\De
 D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Model\bin\Debug\netcoreapp3.1\DOLPHIN.Model.runtimeconfig.dev.json
 D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Model\bin\Debug\netcoreapp3.1\DOLPHIN.Model.dll
 D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Model\bin\Debug\netcoreapp3.1\DOLPHIN.Model.pdb
-D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Model\obj\Debug\netcoreapp3.1\DOLPHIN.Model.csprojAssemblyReference.cache
 D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Model\obj\Debug\netcoreapp3.1\DOLPHIN.Model.AssemblyInfoInputs.cache
 D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Model\obj\Debug\netcoreapp3.1\DOLPHIN.Model.AssemblyInfo.cs
 D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Model\obj\Debug\netcoreapp3.1\DOLPHIN.Model.csproj.CoreCompileInputs.cache
