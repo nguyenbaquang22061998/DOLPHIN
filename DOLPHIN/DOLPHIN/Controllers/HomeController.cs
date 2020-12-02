@@ -31,9 +31,12 @@ namespace DOLPHIN.Controllers
             var product = _context.Products.Where(x => x.Id == id).FirstOrDefault();
             return View(product);
         }
-        public IActionResult Shop()
+        public IActionResult Shop(string keyword)
         {
-            return View();
+            var results = _context.Products.Where(p => string.IsNullOrEmpty(p.ProductName) == false &&
+                                                    p.ProductName.ToLower().Contains(keyword))
+                                                    .ToList();
+            return View(results);
         }
         public IActionResult Contact()
         {

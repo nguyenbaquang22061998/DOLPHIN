@@ -94,7 +94,7 @@
                         <div class="shop-menu pull-right">
                             <ul class="nav navbar-nav">
                                 <li><a href="/Cart/Index"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a></li>
-                                <li><a href="login.html"><i class="fa fa-lock"></i> Đăng nhập</a></li>
+                                <li><a href="/admin/Login"><i class="fa fa-lock"></i> Đăng nhập</a></li>
                             </ul>
                         </div>
                     </div>
@@ -136,9 +136,10 @@
                         </div>
                     </div>
                     <div class="col-sm-3">
-                        <div class="search_box pull-right">
-                            <input type="text" placeholder="Tìm kiếm" />
-                        </div>
+                        @using (Html.BeginForm("Shop", "Home", new { @class = "search_box pull-right" }))
+                        {
+                            <input id="keyword" value="" class="form-control mr-sm-2" type="text" placeholder="Tên sản phẩm..." aria-label="Tìm kiếm" name="keyword">
+                        }
                     </div>
                 </div>
             </div>
