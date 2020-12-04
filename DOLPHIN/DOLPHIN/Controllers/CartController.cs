@@ -69,22 +69,26 @@ namespace DOLPHIN.Controllers
                 newItems.Name = item.Products.ProductName;
                 newItems.Quantity = item.Quantity;
             }
+            
             orderRequestDto.Items = newItems;
             var result =  await this.addressService.CreateOrder(token, orderRequestDto);
-
+            var newOrder = new Orders();
             // Create Order DB
-            var newOrder = new Orders()
+            foreach (var item in result)
             {
-                Id = Guid.NewGuid(),
-                Address = orderRequestDto.Address,
-                Phone = orderRequestDto.Phone,
-                CreatedById = new Guid("33e23a3f-973a-497f-aa92-5228b04057a3"),
-                UpdatedById = new Guid("33e23a3f-973a-497f-aa92-5228b04057a3"),
-                GHNRef = orderRequestDto.CliendOrderCode,
-                UserId = "33e23a3f-973a-497f-aa92-5228b04057a3"
-
-            };
-            _context.Add(newOrder);
+                newOrder.Id = Guid.NewGuid();
+                newOrder.CustomerName = orderRequestDto.Name;
+                newOrder.Address = orderRequestDto.Address;
+                newOrder.Phone = orderRequestDto.Phone;
+                newOrder.CreatedById = new Guid("33e23a3f-973a-497f-aa92-5228b04057a3");
+                newOrder.UpdatedById = new Guid("33e23a3f-973a-497f-aa92-5228b04057a3");
+                newOrder.GHNRef = orderRequestDto.CliendOrderCode;
+                newOrder.OrderCode = item.OrderCode;
+                newOrder.ExpectedDeliveryTime = item.ExpectedDeliveryTime;
+                newOrder.UserId = "33e23a3f-973a-497f-aa92-5228b04057a3";
+                _context.Add(newOrder);
+            }
+            
             _ = await _context.SaveChangesAsync();
 
             // Create OrderDetail DB.
@@ -112,7 +116,7 @@ namespace DOLPHIN.Controllers
             if (orders != null)
             {
                 var orderInfo = await this.addressService.TrackingOrders(orderCode);
-                return View(orderInfo);
+                return View("TrackingSucces" ,orderInfo);
             }
             return View("404");
         }

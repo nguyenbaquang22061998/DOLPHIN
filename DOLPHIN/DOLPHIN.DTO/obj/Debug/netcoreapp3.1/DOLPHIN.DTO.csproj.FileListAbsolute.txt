@@ -79,3 +79,18 @@ D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debu
 D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.dll
 D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.pdb
 D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.genruntimeconfig.cache
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.DTO\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.deps.json
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.DTO\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.runtimeconfig.json
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.DTO\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.runtimeconfig.dev.json
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.DTO\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.dll
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.DTO\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.pdb
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.DTO\bin\Debug\netcoreapp3.1\DOLPHIN.Model.dll
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.DTO\bin\Debug\netcoreapp3.1\DOLPHIN.Model.pdb
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.csprojAssemblyReference.cache
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.AssemblyInfoInputs.cache
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.AssemblyInfo.cs
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.csproj.CoreCompileInputs.cache
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.csproj.CopyComplete
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.dll
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.pdb
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.DTO\obj\Debug\netcoreapp3.1\DOLPHIN.DTO.genruntimeconfig.cache

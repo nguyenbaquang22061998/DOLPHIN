@@ -149,7 +149,7 @@ namespace DOLPHIN.Helpers.Helpers
             var json = JsonConvert.SerializeObject(notiRequest);
             var data = new StringContent(json, Encoding.UTF8, "application/json");
             using var client = new HttpClient();
-            client.BaseAddress = new Uri(ghnUrl);
+            client.BaseAddress = new Uri("https://dev-online-gateway.ghn.vn/");
 
             // Add an Accept header for JSON format.
             client.DefaultRequestHeaders.Accept.Add(

@@ -20,10 +20,10 @@
                         Ngày tạo
                     </th>
                     <th class="text-center">
-                        Người tạo
+                        Nhân viên tạo
                     </th>
                     <th class="text-center">
-                        Người cập nhật
+                        Tên người nhận
                     </th>
                     <th class="text-center">
                         Địa chỉ nhận hàng
@@ -53,7 +53,7 @@
                             @Html.DisplayFor(modelItem => item.CreatedBy.FullName)
                         </td>
                         <td class="text-center">
-                            @Html.DisplayFor(modelItem => item.UpdatedBy.FullName)
+                            @Html.DisplayFor(modelItem => item.CustomerName)
                         </td>
                         <td class="text-center">
                             @Html.DisplayFor(modelItem => item.Address)
@@ -80,9 +80,9 @@
                             }
                         </td>
                         <td class="text-center">
-                            <span class="badge bg-warning"><a href="/Admin/Categories/Edit/@item.Id">Sửa</a></span>
-                            <span class="badge bg-success"><a href="/Admin/Categories/Details/@item.Id">Chi tiết</a></span>
-                            <span class="badge bg-danger"><a href="/Admin/Categories/Delete/@item.Id">Xóa</a></span>
+                            <span class="badge bg-warning"><a href="/Admin/Orders/Edit/@item.Id">Sửa</a></span>
+                            <span class="badge bg-success"><a href="/Admin/Orders/Detail/@item.Id">Chi tiết</a></span>
+                            <span class="badge bg-danger"><a href="/Admin/Orders/Delete/@item.Id">Xóa</a></span>
                         </td>
                     </tr>
                 }

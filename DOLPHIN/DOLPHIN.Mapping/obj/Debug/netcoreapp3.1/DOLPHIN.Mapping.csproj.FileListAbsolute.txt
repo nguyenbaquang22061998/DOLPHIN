@@ -94,3 +94,20 @@ D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\
 D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.dll
 D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.pdb
 D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.genruntimeconfig.cache
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\bin\Debug\netcoreapp3.1\DOLPHIN.Mapping.deps.json
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\bin\Debug\netcoreapp3.1\DOLPHIN.Mapping.runtimeconfig.json
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\bin\Debug\netcoreapp3.1\DOLPHIN.Mapping.runtimeconfig.dev.json
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\bin\Debug\netcoreapp3.1\DOLPHIN.Mapping.dll
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\bin\Debug\netcoreapp3.1\DOLPHIN.Mapping.pdb
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.dll
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\bin\Debug\netcoreapp3.1\DOLPHIN.Model.dll
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\bin\Debug\netcoreapp3.1\DOLPHIN.DTO.pdb
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\bin\Debug\netcoreapp3.1\DOLPHIN.Model.pdb
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.csprojAssemblyReference.cache
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.AssemblyInfoInputs.cache
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.AssemblyInfo.cs
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.csproj.CoreCompileInputs.cache
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.csproj.CopyComplete
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.dll
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.pdb
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN.Mapping\obj\Debug\netcoreapp3.1\DOLPHIN.Mapping.genruntimeconfig.cache
