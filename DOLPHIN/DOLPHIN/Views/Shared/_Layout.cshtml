@@ -1,7 +1,10 @@
 ﻿@using Microsoft.AspNetCore.Http;
 @using Newtonsoft.Json;
 @using DOLPHIN.Model
+@using DOLPHIN.Models
 @{
+    List<CartItem> lineCollection = new List<CartItem>();
+
     var data = Context.Session.GetString("cart");
 
     int coutCart = 0;
@@ -19,6 +22,7 @@
         }
 
     }
+    var sum = lineCollection.Sum(p => p.Quantity);
 
 }
 
@@ -61,7 +65,7 @@
                         <div class="contactinfo">
                             <ul class="nav nav-pills">
                                 <li><a href="#"><i class="fa fa-phone"></i> +84 368345905</a></li>
-                                <li><a href="#"><i class="fa fa-envelope"></i> dolphinclothing@domain.com</a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i> dolphinclothing@gmail.com</a></li>
                             </ul>
                         </div>
                     </div>
@@ -93,7 +97,15 @@
                     <div class="col-sm-8">
                         <div class="shop-menu pull-right">
                             <ul class="nav navbar-nav">
-                                <li><a href="/Cart/Index"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a></li>
+                                <li>
+                                    @if (data != null)
+                                    {
+                                        <a href="/Cart/Index"><span class="no_product">@sum sản phẩm</span></a>
+                                    }
+                                    else
+                                    {
+                                        <a href="#"><span class="no_product"><i class="fa fa-shopping-cart"></i>Giỏ hàng</span></a>
+                                    }
                                 <li><a href="/admin/Login"><i class="fa fa-lock"></i> Đăng nhập</a></li>
                             </ul>
                         </div>

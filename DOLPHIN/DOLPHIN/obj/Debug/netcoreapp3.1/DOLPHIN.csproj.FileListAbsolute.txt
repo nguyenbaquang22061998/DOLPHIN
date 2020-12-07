@@ -1513,3 +1513,4 @@ D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN\obj\Debug\netcoreapp
 D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Orders\Detail.cshtml.g.cs
 D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Orders\Detail.cshtml.g.cs
 D:\Đồ án - QUANG\DOLPHIN_v2_last_update\DOLPHIN\DOLPHIN\DOLPHIN\obj\Debug\netcoreapp3.1\Razor\Views\Cart\TrackingSucces.cshtml.g.cs
+D:\DAI HOC\Đồ án tốt nghiệp\DOLPHIN\DOLPHIN\DOLPHIN\obj\Debug\netcoreapp3.1\Razor\Views\Cart\ProductNotFound.cshtml.g.cs

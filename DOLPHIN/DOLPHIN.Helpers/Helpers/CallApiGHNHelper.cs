@@ -187,6 +187,72 @@ namespace DOLPHIN.Helpers.Helpers
 
             return result;
         }
+        public async Task<string> PrintOrder(string orderCode)
+        {
+            var notiRequest = new
+            {
+                order_codes = new[] {
+                    new {
+                        orderCode
+                    }
+                }
+            };
+            var json = JsonConvert.SerializeObject(notiRequest);
+            var data = new StringContent(json, Encoding.UTF8, "application/json");
+            using var client = new HttpClient();
+            client.BaseAddress = new Uri("https://dev-online-gateway.ghn.vn/");
+
+            // Add an Accept header for JSON format.
+            client.DefaultRequestHeaders.Accept.Add(
+            new MediaTypeWithQualityHeaderValue("application/json"));
+            client.DefaultRequestHeaders.Add("token", "98bb7369-1162-11eb-a23c-065c95c021cb");
+
+            // List data response.
+            var response = await client.PostAsync("/shiip/public-api/v2/a5/gen-token", data);
+            var result = await response.Content.ReadAsStringAsync();
+
+            return result;
+        }
+        public async Task<string> UpdateOrders(OrderRequestDto orderRequestDto)
+        {
+            var notiRequest = new
+            {
+                order_code = orderRequestDto.OrderCode,
+                note = orderRequestDto.Note,
+                to_name = orderRequestDto.Name,
+                to_phone = orderRequestDto.Phone,
+                to_address = orderRequestDto.Address,
+                to_ward_code = orderRequestDto.WardCode,
+                to_district_id = orderRequestDto.DistrictId,
+                cod_amount = orderRequestDto.CodAmount,
+                content = orderRequestDto.Content,
+                source = "5sao",
+                items = new[] {
+                    new {
+                        name = orderRequestDto.Items.Name,
+                        code = orderRequestDto.Items.Code,
+                        quantity = orderRequestDto.Items.Quantity
+                    }
+                }
+
+            };
+            var json = JsonConvert.SerializeObject(notiRequest);
+            var data = new StringContent(json, Encoding.UTF8, "application/json");
+            using var client = new HttpClient();
+            client.BaseAddress = new Uri("https://dev-online-gateway.ghn.vn/");
+
+            // Add an Accept header for JSON format.
+            client.DefaultRequestHeaders.Accept.Add(
+            new MediaTypeWithQualityHeaderValue("application/json"));
+            client.DefaultRequestHeaders.Add("token", "98bb7369-1162-11eb-a23c-065c95c021cb");
+            client.DefaultRequestHeaders.Add("ShopId", "75661");
+
+            // List data response.
+            var response = await client.PostAsync("/shiip/public-api/v2/shipping-order/update", data);
+            var result = await response.Content.ReadAsStringAsync();
+
+            return result;
+        }
         private async Task<StringContent> CreateRequest(int provinceId)
         {
             var notiRequest = new

@@ -15,5 +15,7 @@ namespace DOLPHIN.Helpers.Interfaces
         Task<string> CreateOrder(string token, OrderRequestDto orderRequestDto);
         Task<string> TrackingOrders(string orderCode);
         Task<string> TrackingOrdersByClient(string clientOrderCode);
+        Task<string> UpdateOrders(OrderRequestDto orderRequestDto);
+        Task<string> PrintOrder(string orderCode);
     }
 }

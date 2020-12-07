@@ -128,15 +128,22 @@ namespace DOLPHIN.Service.Services
             var result = JsonConvert.DeserializeObject<dynamic>(response);
             var orderInfo = new List<OrderInfoDto>();
             var logOrders = new List<LogsOrderDto>();
-
-            foreach (var logs in result.data.log)
+            logOrders.Add(new LogsOrderDto
             {
-                logOrders.Add(new LogsOrderDto
+                Status = "Chưa in mã vận đơn"
+            });
+            if (result.data.log != null)
+            {
+                foreach (var logs in result.data.log)
                 {
-                    Status = logs.status,
-                    UpdateDate = logs.updated_date
-                });
+                    logOrders.Add(new LogsOrderDto
+                    {
+                        Status = logs.status,
+                        UpdateDate = logs.updated_date
+                    });
+                }
             }
+            
             orderInfo.Add(new OrderInfoDto
             {
                 Name = result.data.to_name,

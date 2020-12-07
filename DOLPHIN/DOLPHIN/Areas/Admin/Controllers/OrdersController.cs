@@ -33,7 +33,7 @@ namespace DOLPHIN.Areas.Admin.Controllers
             }
             var order = _context.Orders.Where(x => x.Id == Id).FirstOrDefault();
             var detailOrder = await this.addressService.OrderInfo(order.OrderCode);
-            return View();
+            return View(detailOrder);
         }
     }
 }

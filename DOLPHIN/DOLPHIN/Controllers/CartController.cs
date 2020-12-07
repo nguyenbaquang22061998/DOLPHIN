@@ -224,7 +224,10 @@ namespace DOLPHIN.Controllers
             return Redirect("/Cart/Index");
         }
 
-
+        public IActionResult ProductNotFound()
+        {
+            return View();
+        }
 
     }
 }

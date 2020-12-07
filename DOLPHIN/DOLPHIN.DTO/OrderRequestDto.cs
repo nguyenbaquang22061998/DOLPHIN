@@ -107,6 +107,16 @@ namespace DOLPHIN.DTO
         public string RequiredNote { get; set; }
 
         /// <summary>
+        /// Gets or sets OrderCode.
+        /// </summary>
+        public string OrderCode { get; set; }
+
+        /// <summary>
+        /// Gets or sets Note.
+        /// </summary>
+        public string Note { get; set; }
+
+        /// <summary>
         /// Gets or sets Items.
         /// </summary>
         public ItemsDto Items { get; set; }
