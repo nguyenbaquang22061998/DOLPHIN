@@ -153,7 +153,16 @@ namespace DOLPHIN.Model.Migrations
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<string>("CustomerName")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<DateTime>("ExpectedDeliveryTime")
+                        .HasColumnType("datetime(6)");
+
                     b.Property<string>("GHNRef")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("OrderCode")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<int>("OrderStatusCode")

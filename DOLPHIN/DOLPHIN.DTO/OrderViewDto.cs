@@ -10,6 +10,6 @@ namespace DOLPHIN.DTO
         public string ClientOrderCode { get; set; }
         public string SortCode { get; set; }
         public string TotalFee { get; set; }
-        public string ExpectedDeliveryTime { get; set; }
+        public DateTime ExpectedDeliveryTime { get; set; }
     }
 }

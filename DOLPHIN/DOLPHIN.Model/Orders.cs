@@ -14,7 +14,7 @@ namespace DOLPHIN.Model
 
         public int Amount { get; set; }
 
-        //public string CustomerName { get; set; }
+        public string CustomerName { get; set; }
 
         public string Address { get; set; }
 
@@ -23,6 +23,9 @@ namespace DOLPHIN.Model
         public int OrderStatusCode { get; set; }
 
         public string GHNRef { get; set; }
+
+        public string OrderCode { get; set; }
+        public DateTime ExpectedDeliveryTime { get; set; }
 
         public virtual ICollection<OrderDetails> OrderDetails { get; set; }
     }

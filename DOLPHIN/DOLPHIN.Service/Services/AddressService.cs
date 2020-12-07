@@ -90,21 +90,18 @@ namespace DOLPHIN.Service.Services
             var result = JsonConvert.DeserializeObject<dynamic>(response);
             var orders = new List<OrderViewDto>();
 
+            //orders.Add(new OrderViewDto
+            //{
+            //    ClientOrderCode = orderRequestDto.CliendOrderCode
+            //});
             orders.Add(new OrderViewDto
             {
-                ClientOrderCode = orderRequestDto.CliendOrderCode
+                ClientOrderCode = orderRequestDto.CliendOrderCode,
+                OrderCode = result?.data.order_code,
+                SortCode = result?.data.sort_code,
+                TotalFee = result?.data.total_fee,
+                ExpectedDeliveryTime = result?.data.expected_delivery_time
             });
-            //foreach (var item in result?.data)
-            //{
-            //    orders.Add(new OrderViewDto
-            //    {
-            //        ClientOrderCode = orderRequestDto.CliendOrderCode
-            //        OrderCode = item.order_code,
-            //        SortCode = item.sort_code,
-            //        TotalFee = item.total_fee,
-            //        ExpectedDeliveryTime = item.expected_delivery_time
-            //    });
-            //}
 
             return orders;
         }
@@ -115,15 +112,40 @@ namespace DOLPHIN.Service.Services
             var result = JsonConvert.DeserializeObject<dynamic>(response);
             var trackingOrders = new List<TrackingOrderViewDto>();
 
-            foreach (var item in result?.data)
+            trackingOrders.Add(new TrackingOrderViewDto
             {
-                trackingOrders.Add(new TrackingOrderViewDto
-                {
-                    Status = item.status
-                });
-            }
+                Status = result.data.status, 
+                ToName = result.data.to_name,
+                ToAddress = result.data.to_address,
+                ToPhone = result.data.to_phone                
+            });
 
             return trackingOrders;
+        }
+        public async Task<List<OrderInfoDto>> OrderInfo(string orderCode)
+        {
+            var response = await this.callApiGHNHelper.TrackingOrders(orderCode);
+            var result = JsonConvert.DeserializeObject<dynamic>(response);
+            var orderInfo = new List<OrderInfoDto>();
+            var logOrders = new List<LogsOrderDto>();
+
+            foreach (var logs in result.data.log)
+            {
+                logOrders.Add(new LogsOrderDto
+                {
+                    Status = logs.status,
+                    UpdateDate = logs.updated_date
+                });
+            }
+            orderInfo.Add(new OrderInfoDto
+            {
+                Name = result.data.to_name,
+                Address = result.data.to_address,
+                Phone = result.data.to_phone,
+                logsOrderDtos = logOrders
+            });
+
+            return orderInfo;
         }
     }
 }
